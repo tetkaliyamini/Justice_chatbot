@@ -1,0 +1,2598 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day"
+        ],
+        "responses": [
+          "Hey :-)",
+          "Hello, thanks for visiting",
+          "Hi there, what can I do for you?",
+          "Hi there, how can I help?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": [
+          "See you later, thanks for visiting",
+          "Have a nice day",
+          "Bye! Come back again soon."
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      },
+     
+      {
+        "tag": "payments",
+        "patterns": [
+          "Do you take credit cards?",
+          "Do you accept Mastercard?",
+          "Can I pay with Paypal?",
+          "Are you cash only?"
+        ],
+        "responses": [
+          "We accept VISA, Mastercard and Paypal",
+          "We accept most major credit cards, and Paypal"
+        ]
+      },
+      {
+        "tag": "department_role_and_functions",
+        "patterns": [
+            "What does the Department of Justice do?",
+            "Tell me about the responsibilities of the Department of Justice",
+            "What is the DOJ's role?"
+        ],
+        "responses": [
+            "The Department of Justice enforces federal laws, prosecutes crimes, represents the India government in civil cases, oversees the federal prison system, and ensures the protection of civil rights for all citizens."
+        ],
+        "context": [
+            "General Information"
+        ]
+    },
+    {
+        "tag": "contact_information",
+        "patterns": [
+            "How can I contact the DOJ?",
+            "What is the contact information for the Department of Justice?",
+            "Give me the phone and email for the DOJ"
+        ],
+        "responses": [
+            "You can contact the Department of Justice via phone at (+91) 01123383674, or email at secy-jus@gov.in For more details, visit the official website at https://doj.gov.in/."
+        ],
+        "context": [
+            "General Information"
+        ]
+    },
+    {
+        "tag": "office_locations",
+        "patterns": [
+            "Where are the DOJ offices?",
+            "What are the office locations of the Department of Justice?",
+            "Where is the DOJ located?"
+        ],
+        "responses": [
+            "The headquarters of the Department of Justice in India is located at Jaisalmer House, 26, Man Singh Road, New Delhi-110001. The phone number for the Department of Justice is 011-23072149."
+        ],
+        "context": [
+            "General Information"
+        ]
+    },
+    {
+        "tag": "hours_of_operation",
+        "patterns": [
+            "What are the DOJ hours of operation?",
+            "When is the DOJ open?",
+            "What is the working time for the Department of Justice?"
+        ],
+        "responses": [
+            "The Department of Justice typically operates from 8:30 AM to 5:00 PM, Monday through Friday, except on federal holidays."
+        ],
+        "context": [
+            "General Information"
+        ]
+    },
+    {
+        "tag": "court_procedures",
+        "patterns": [
+            "How do courts work?",
+            "Tell me about court procedures",
+            "Explain the types of courts"
+        ],
+        "responses": [
+            "Courts handle civil, criminal, and administrative matters. There are different types of courts, such as district courts (trial-level), courts of appeal, and the U.S. Supreme Court."
+        ],
+        "context": [
+            "Legal Processes"
+        ]
+    },
+    {
+        "tag": "legal_documents",
+        "patterns": [
+            "What documents are needed for legal proceedings?",
+            "What are the legal documents required for court?",
+            "Tell me about legal documentation"
+        ],
+        "responses": [
+            "Common legal documents include complaints, subpoenas, affidavits, motions, and pleadings, all of which are essential in filing or defending a legal case."
+        ],
+        "context": [
+            "Legal Processes"
+        ]
+    },
+    {
+        "tag": "legal_advice",
+        "patterns": [
+            "Can the DOJ provide legal advice?",
+            "Does the DOJ offer legal advice?",
+            "How do I get legal advice from the DOJ?"
+        ],
+        "responses": [
+            "The Department of Justice cannot provide direct legal advice to the public. For legal assistance, individuals should contact a lawyer or legal aid service."
+        ],
+        "context": [
+            "Legal Processes"
+        ]
+    },
+    {
+        "tag": "case_status",
+        "patterns": [
+            "How do I check the status of a case?",
+            "Tell me how to check my case status",
+            "How can I track my case?"
+        ],
+        "responses": [
+            "You can check the status of a case by contacting the court where it was filed, using online case search tools, or through your legal representative."
+        ],
+        "context": [
+            "Legal Processes"
+        ]
+    },
+    {
+        "tag": "legal_aid",
+        "patterns": [
+            "How do I apply for legal aid?",
+            "What are the criteria for legal aid?",
+            "Tell me about legal aid eligibility"
+        ],
+        "responses": [
+            "To apply for legal aid, you must meet certain income and case type requirements. You can apply through local legal aid offices or nonprofits offering assistance."
+        ],
+        "context": [
+            "Services"
+        ]
+    },
+    {
+        "tag": "mediation_and_arbitration",
+        "patterns": [
+            "What is mediation and arbitration?",
+            "How can I use mediation for a dispute?",
+            "Tell me about arbitration processes"
+        ],
+        "responses": [
+            "Mediation and arbitration are alternative dispute resolution processes. Mediation involves a neutral third party helping both sides reach a mutual agreement, while arbitration involves a binding decision from a neutral arbitrator."
+        ],
+        "context": [
+            "Services"
+        ]
+    },
+    {
+        "tag": "public_records",
+        "patterns": [
+            "How do I access public records?",
+            "What are the fees for public records?",
+            "Tell me about getting public documents"
+        ],
+        "responses": [
+            "You can request public records through the Freedom of Information Act (FOIA). Fees may apply based on the document type and processing time."
+        ],
+        "context": [
+            "Services"
+        ]
+    },
+    {
+        "tag": "file_complaint",
+        "patterns": [
+            "How do I file a complaint against a government official?",
+            "Tell me how to submit a complaint to the DOJ",
+            "What is the process to file a complaint?"
+        ],
+        "responses": [
+            "To file a complaint against a government official or agency, you can submit it through the Department of Justice's Office of Professional Responsibility or the Office of the Inspector General."
+        ],
+        "context": [
+            "Services"
+        ]
+    },
+    {
+        "tag": "property_rights",
+        "patterns": [
+            "What are property rights?",
+            "Tell me about property disputes",
+            "Explain property taxes and land ownership issues"
+        ],
+        "responses": [
+            "Property rights refer to legal ownership and the right to use, transfer, or control property. Disputes often arise over land use, property boundaries, and property taxes."
+        ],
+        "context": [
+            "Specific Topics"
+        ]
+    },
+    {
+        "tag": "family_law",
+        "patterns": [
+            "Tell me about family law",
+            "What is the process for divorce?",
+            "Explain child custody laws"
+        ],
+        "responses": [
+            "Family law includes issues like divorce, child custody, child support, and adoption. These are often handled in family courts, where parties can seek legal resolution."
+        ],
+        "context": [
+            "Specific Topics"
+        ]
+    },
+    {
+        "tag": "criminal_law",
+        "patterns": [
+            "What are the steps in a criminal case?",
+            "Tell me about criminal trials and sentencing",
+            "Explain the criminal law process"
+        ],
+        "responses": [
+            "Criminal law handles cases of arrests, charges, trials, and sentencing. Defendants are either acquitted or convicted after the trial process."
+        ],
+        "context": [
+            "Specific Topics"
+        ]
+    },
+    {
+        "tag": "civil_law",
+        "patterns": [
+            "What is civil law?",
+            "Tell me about civil disputes",
+            "Explain contract and tort law"
+        ],
+        "responses": [
+            "Civil law covers disputes between individuals or organizations, including contracts, torts, and property issues. Civil courts deal with non-criminal cases that seek damages or other remedies."
+        ],
+        "context": [
+            "Specific Topics"
+        ]
+    },
+    {
+            "tag": "doj_general_information",
+            "patterns": [
+                "Tell me about the Department of Justice",
+                "What does the Department of Justice do?",
+                "General information about the Department of Justice",
+                "DoJ overview"
+            ],
+            "responses": [
+                "The Department of Justice (DoJ) is a part of the Ministry of Law & Justice, Government of India. It is responsible for judicial infrastructure development, special courts for speedy trials of sensitive cases, the eCourts Project, and legal aid to the poor, among other functions."
+            ],
+            "context": ["General Information"]
+        },
+        {
+            "tag": "divisions_of_doj",
+            "patterns": [
+                "What are the divisions of the Department of Justice?",
+                "Tell me about DoJ divisions",
+                "DoJ sections"
+            ],
+            "responses": [
+                "The Department of Justice has several divisions including Judicial Appointments, eCourts Project, National Judicial Data Grid (NJDG), Fast Track Courts, and Tele Law Services."
+            ],
+            "context": ["General Information"]
+        },
+        {
+            "tag": "number_of_judges_and_vacancies",
+            "patterns": [
+                "How many judges are appointed in the Supreme Court?",
+                "What is the number of High Court judges?",
+                "Current vacancies in the judiciary"
+            ],
+            "responses": [
+                "As of the latest data, there are 33 judges in the Supreme Court, 1114 judges in High Courts, and by the Governor in consultation with the High Courts,  judges in District and Subordinate Courts. The current number of vacancies can be checked through the National Judicial Data Grid (NJDG)."
+            ],
+            "context": ["Judicial Statistics"]
+        },
+        {
+            "tag": "case_pendency_status",
+            "patterns": [
+                "How can I check my case status?",
+                "Check case pendency through NJDG",
+                "What is the status of my court case?"
+            ],
+            "responses": [
+                "You can check the status of your case through the National Judicial Data Grid (NJDG) by visiting the official website or using the eCourts Services Mobile App."
+            ],
+            "context": ["Case Status"]
+        },
+        {
+            "tag": "pay_traffic_fine",
+            "patterns": [
+                "How do I pay a traffic fine?",
+                "Where can I pay my traffic violation fine?",
+                "Steps for paying traffic fines"
+            ],
+            "responses": [
+                "You can pay your traffic fines online by visiting the official traffic violation payment portal or using the ePay service on the eCourts platform."
+            ],
+            "context": ["Legal Services"]
+        },
+        {
+            "tag": "live_streaming_court_cases",
+            "patterns": [
+                "How can I watch live streaming of court cases?",
+                "Is live streaming of court proceedings available?",
+                "Where can I find live court case streams?"
+            ],
+            "responses": [
+                "Live streaming of selected court cases is available on the Supreme Court's official website. You can visit the site for details on which cases are being streamed live."
+            ],
+            "context": ["Legal Services"]
+        },
+        {
+            "tag": "efiling_steps",
+            "patterns": [
+                "How can I file a case online?",
+                "Steps for eFiling in court",
+                "eFiling procedure"
+            ],
+            "responses": [
+                "To file a case online, visit the eFiling portal on the official eCourts website. Follow the steps provided on the platform to register your case."
+            ],
+            "context": ["Legal Services"]
+        },
+        {
+            "tag": "download_ecourts_services_app",
+            "patterns": [
+                "How can I download the eCourts Services Mobile App?",
+                "Where can I get the eCourts app?",
+                "Download eCourts Services App"
+            ],
+            "responses": [
+                "The eCourts Services Mobile App is available for download on the Google Play Store and Apple App Store. It provides easy access to case information, including case status, cause lists, and more."
+            ],
+            "context": ["Legal Services"]
+        },
+        {
+            "tag": "fast_track_courts_info",
+            "patterns": [
+                "What are Fast Track Courts?",
+                "How do Fast Track Courts work?",
+                "Information about Fast Track Courts"
+            ],
+            "responses": [
+                "Fast Track Courts are special courts established for the speedy trial and disposal of cases, particularly sensitive cases like rape and POCSO Act cases. They aim to reduce the pendency of such cases."
+            ],
+            "context": ["Judicial Information"]
+        },
+        {
+            "tag": "tele_law_services",
+            "patterns": [
+                "How can I avail Tele Law Services?",
+                "What are Tele Law Services?",
+                "Tele Law Services information"
+            ],
+            "responses": [
+                "Tele Law Services provide legal assistance to citizens through video conferencing with lawyers available at Common Service Centers (CSCs). You can apply for Tele Law Services by visiting your nearest CSC."
+            ],
+            "context": ["Legal Aid"]
+        },
+        {
+            "tag": "current_status_of_case",
+            "patterns": [
+                "How can I check the current status of my case?",
+                "Where to check case updates?",
+                "Track my case status"
+            ],
+            "responses": [
+                "To check the current status of your case, visit the National Judicial Data Grid (NJDG) or use the eCourts Services Mobile App to track case progress."
+            ],
+            "context": ["Case Status"]
+        },
+            {
+                "tag": "legal_aid_eligibility",
+                "patterns": [
+                    "How do I apply for legal aid?",
+                    "What are the eligibility criteria for legal aid?",
+                    "Who qualifies for legal aid?"
+                ],
+                "responses": [
+                    "Legal aid is available to individuals who cannot afford legal representation. To qualify, applicants typically need to meet certain income requirements or belong to marginalized groups. You can apply through your nearest District Legal Services Authority (DLSA) or visit the National Legal Services Authority (NALSA) website for more details."
+                ],
+                "context": ["Legal Aid"]
+            },
+            {
+                "tag": "legal_documents_required",
+                "patterns": [
+                    "What documents do I need for legal proceedings?",
+                    "Required documents for filing a case",
+                    "What paperwork is necessary for court?"
+                ],
+                "responses": [
+                    "Common documents needed for legal proceedings include identity proof, address proof, case-related documents (e.g., FIR for criminal cases), evidence, and any prior legal notices. The specific documents required may vary depending on the type of case."
+                ],
+                "context": ["Legal Information"]
+            },
+            {
+                "tag": "court_types_explained",
+                "patterns": [
+                    "What are the different types of courts?",
+                    "Explain the types of courts in India",
+                    "Types of courts in the judicial system"
+                ],
+                "responses": [
+                    "The Indian judicial system is divided into several types of courts: the Supreme Court (the apex court), High Courts (state-level courts), and District/Subordinate Courts (trial courts). There are also specialized courts like Fast Track Courts and Family Courts for specific cases."
+                ],
+                "context": ["Judicial Information"]
+            },
+            {
+                "tag": "court_procedures",
+                "patterns": [
+                    "How do court procedures work?",
+                    "Steps involved in a court case",
+                    "What is the process for filing a lawsuit?"
+                ],
+                "responses": [
+                    "Court procedures generally involve filing a case (plaint or petition), serving notices to the parties involved, presenting evidence, attending hearings, and receiving a judgment. The exact process may vary depending on the type of case and court jurisdiction."
+                ],
+                "context": ["Judicial Information"]
+            },
+            {
+                "tag": "public_records_access",
+                "patterns": [
+                    "How can I access public records?",
+                    "Where can I get public records?",
+                    "Can I request public documents?"
+                ],
+                "responses": [
+                    "Public records can be accessed through the official government portals or by visiting the relevant department. Fees may be required for obtaining copies of documents. You can also apply through the Right to Information (RTI) portal for specific government records."
+                ],
+                "context": ["Public Records"]
+            },
+            {
+                "tag": "mediation_and_arbitration",
+                "patterns": [
+                    "What is mediation?",
+                    "How does arbitration work?",
+                    "Explain the process of mediation and arbitration"
+                ],
+                "responses": [
+                    "Mediation and arbitration are alternative dispute resolution methods. Mediation involves a neutral third party helping disputing parties reach an agreement, while arbitration involves an arbitrator making a binding decision. These methods are often quicker and less costly than court proceedings."
+                ],
+                "context": ["Dispute Resolution"]
+            },
+            {
+                "tag": "filing_complaints",
+                "patterns": [
+                    "How can I file a complaint against a government official?",
+                    "Where can I submit complaints?",
+                    "Steps to file a complaint with the government"
+                ],
+                "responses": [
+                    "To file a complaint against a government official or agency, you can visit the relevant department's website or use online grievance redressal systems such as the Centralized Public Grievance Redress and Monitoring System (CPGRAMS). You may need to provide your identification and details of the complaint."
+                ],
+                "context": ["Complaints"]
+            },
+            {
+                "tag": "property_rights_issues",
+                "patterns": [
+                    "What are my property rights?",
+                    "How to handle property disputes?",
+                    "What are property laws in India?"
+                ],
+                "responses": [
+                    "Property rights in India include the right to own, buy, and sell property. Property disputes are typically handled by civil courts and may involve land ownership, property taxes, or encroachment. The Transfer of Property Act and various state laws govern these matters."
+                ],
+                "context": ["Property Law"]
+            },
+            {
+                "tag": "family_law_issues",
+                "patterns": [
+                    "How do I file for divorce?",
+                    "What are the child custody laws?",
+                    "Explain family law in India"
+                ],
+                "responses": [
+                    "Family law in India governs matters related to divorce, child custody, adoption, and child support. Laws may vary depending on personal laws (e.g., Hindu Marriage Act, Muslim Personal Law). Divorce and custody cases are typically handled by family courts."
+                ],
+                "context": ["Family Law"]
+            },
+            {
+                "tag": "criminal_law_procedures",
+                "patterns": [
+                    "What happens after an arrest?",
+                    "Explain criminal law in India",
+                    "What are the stages of a criminal trial?"
+                ],
+                "responses": [
+                    "After an arrest, the accused is presented before a magistrate within 24 hours. A criminal trial may involve various stages including investigation, framing of charges, evidence presentation, examination of witnesses, and the final judgment. Criminal law is governed by the Indian Penal Code (IPC) and the Code of Criminal Procedure (CrPC)."
+                ],
+                "context": ["Criminal Law"]
+            },
+            {
+                "tag": "civil_law_information",
+                "patterns": [
+                    "What are civil law disputes?",
+                    "How do civil law cases work?",
+                    "Civil law in India"
+                ],
+                "responses": [
+                    "Civil law deals with disputes between individuals or organizations, such as contracts, property disputes, and torts. Civil cases usually involve a plaintiff seeking compensation or another remedy. Civil procedures are governed by the Code of Civil Procedure (CPC)."
+                ],
+                "context": ["Civil Law"]
+            }
+        , {
+            "tag": "court_filing_fees",
+            "patterns": [
+                "How much is the court filing fee?",
+                "What are the charges for filing a case?",
+                "Court fee for different cases"
+            ],
+            "responses": [
+                "Court filing fees vary based on the type of case, the court jurisdiction, and the financial claims involved. You can check the specific court's website or the eCourts portal to determine the fees applicable for different types of cases."
+            ],
+            "context": ["Court Procedures"]
+        },
+        {
+            "tag": "legal_aid_eligibility",
+            "patterns": [
+                "How do I qualify for legal aid?",
+                "What are the eligibility criteria for free legal aid?",
+                "Can I get free legal representation?"
+            ],
+            "responses": [
+                "Eligibility for legal aid is based on various factors such as income, gender, and social status. In general, individuals belonging to marginalized sections of society, including women, children, persons with disabilities, and those below the poverty line, are eligible. You can apply through the National Legal Services Authority (NALSA) or visit the nearest District Legal Services Authority."
+            ],
+            "context": ["Legal Aid"]
+        },
+        {
+            "tag": "court_hearing_schedule",
+            "patterns": [
+                "How to find out my court hearing date?",
+                "Where can I check my next court hearing?",
+                "Court hearing schedule details"
+            ],
+            "responses": [
+                "You can check your court hearing schedule by visiting the eCourts portal or using the eCourts Services mobile app. By entering your case number, advocate name, or party name, you can get the next hearing date and relevant updates."
+            ],
+            "context": ["Judicial Services"]
+        },
+        {
+            "tag": "filing_a_complaint",
+            "patterns": [
+                "How do I file a complaint against a government official?",
+                "Steps to file a complaint against an agency",
+                "Procedure to complain about government misconduct"
+            ],
+            "responses": [
+                "To file a complaint against a government official or agency, you can approach the Public Grievances Portal or file a written complaint with the relevant department. For specific legal grievances, you may need to file a formal complaint in court or consult with a legal advisor."
+            ],
+            "context": ["Complaints"]
+        },
+        {
+            "tag": "witness_protection_program",
+            "patterns": [
+                "What is the witness protection program?",
+                "How can I get witness protection?",
+                "Can witnesses get legal protection?"
+            ],
+            "responses": [
+                "The Witness Protection Scheme provides safeguards for witnesses involved in criminal cases. Individuals who feel threatened or face intimidation due to their involvement as witnesses can apply for protection through the police or the court. The program offers physical security, relocation, and identity protection."
+            ],
+            "context": ["Criminal Law"]
+        },
+        {
+            "tag": "court_record_access",
+            "patterns": [
+                "How do I access court records?",
+                "Where can I get copies of court documents?",
+                "How much does it cost to get court records?"
+            ],
+            "responses": [
+                "Court records can be accessed through the eCourts portal or by submitting a request at the court where the case was heard. You may need to pay a nominal fee for copies of judgments, orders, or case documents."
+            ],
+            "context": ["Public Records"]
+        },
+        {
+            "tag": "bail_procedures",
+            "patterns": [
+                "How do I apply for bail?",
+                "What is the bail process?",
+                "Can I get bail in a criminal case?"
+            ],
+            "responses": [
+                "To apply for bail, your lawyer must file a bail application in the relevant court. Bail can be granted based on the severity of the offense and the circumstances surrounding the case. The court may impose conditions such as regular reporting to the police or restrictions on travel."
+            ],
+            "context": ["Criminal Law"]
+        },
+        {
+            "tag": "filing_an_appeal",
+            "patterns": [
+                "How do I file an appeal in a case?",
+                "What is the procedure for appealing a court decision?",
+                "Can I appeal a court judgment?"
+            ],
+            "responses": [
+                "To file an appeal, you need to submit an appeal petition to the higher court within the prescribed time limit after the lower court's judgment. Your lawyer will prepare the necessary documents and arguments to support the appeal. Appeals can be made in both civil and criminal cases."
+            ],
+            "context": ["Court Procedures"]
+        },
+        {
+            "tag": "court_jurisdictions",
+            "patterns": [
+                "What types of courts are there?",
+                "Which court has jurisdiction over my case?",
+                "Difference between civil and criminal courts"
+            ],
+            "responses": [
+                "Courts in India are divided into several categories based on the type of cases they handle. Civil courts handle disputes related to contracts, property, and family matters, while criminal courts handle offenses like theft, assault, and murder. Higher courts such as the High Court and Supreme Court hear appeals."
+            ],
+            "context": ["Court Procedures"]
+        },
+        {
+            "tag": "fines_for_contempt_of_court",
+            "patterns": [
+                "What is contempt of court?",
+                "What are the penalties for contempt of court?",
+                "Can someone be fined for contempt of court?"
+            ],
+            "responses": [
+                "Contempt of court refers to actions that disrespect or disobey court orders, interfere with the justice process, or undermine the authority of the judiciary. Penalties for contempt may include fines, imprisonment, or both, depending on the severity of the offense."
+            ],
+            "context": ["Legal Procedures"]
+        },
+        {
+            "tag": "filing_a_divorce",
+            "patterns": [
+                "How do I file for divorce?",
+                "What are the steps to initiate divorce proceedings?",
+                "How long does the divorce process take?"
+            ],
+            "responses": [
+                "To file for divorce, you or your lawyer must submit a divorce petition in the family court with jurisdiction over your residence. The process involves submitting necessary documents, such as proof of marriage and grounds for divorce. The length of the process depends on the type of divorce (mutual or contested) and the court's schedule."
+            ],
+            "context": ["Family Law"]
+        },
+        {
+            "tag": "child_custody_laws",
+            "patterns": [
+                "What are the laws on child custody?",
+                "How do courts decide child custody?",
+                "Can I get sole custody of my child?"
+            ],
+            "responses": [
+                "Child custody decisions are made by family courts based on the best interests of the child. Factors such as the child's age, the parents' ability to provide for the child, and the child's preference (if they are old enough) are considered. Custody can be awarded as sole or joint, depending on the circumstances."
+            ],
+            "context": ["Family Law"]
+        },
+        {
+            "tag": "legal_protection_for_women",
+            "patterns": [
+                "What legal protections do women have?",
+                "Are there special laws for women's safety?",
+                "Can women get legal aid in harassment cases?"
+            ],
+            "responses": [
+                "India has several laws protecting women, including the Protection of Women from Domestic Violence Act, 2005, and the Sexual Harassment of Women at Workplace Act, 2013. Women facing harassment or violence can seek legal aid through various legal services authorities and helplines."
+            ],
+            "context": ["Legal Aid"]
+        },
+        {
+            "tag": "steps_for_adr",
+            "patterns": [
+                "What are alternative dispute resolution methods?",
+                "How can I settle disputes outside of court?",
+                "Steps to start mediation or arbitration"
+            ],
+            "responses": [
+                "Alternative Dispute Resolution (ADR) methods like mediation, arbitration, and conciliation allow parties to resolve disputes without going to court. Mediation involves a neutral third party helping both sides reach a mutually agreeable solution, while arbitration involves a binding decision made by an arbitrator."
+            ],
+            "context": ["Dispute Resolution"]
+        },
+        {
+            "tag": "property_registration",
+            "patterns": [
+                "How do I register my property?",
+                "What is the process for property registration?",
+                "Where can I register my property?"
+            ],
+            "responses": [
+                "Property registration involves submitting documents, including the sale deed, proof of ownership, and identification, at the local sub-registrar's office. The property registration fee is usually based on the market value of the property, and the process ensures legal ownership transfer."
+            ],
+            "context": ["Property Law"]
+        }
+    
+,    
+            {
+                "tag": "traffic_violation_fines",
+                "patterns": [
+                    "How can I pay my traffic fine?",
+                    "Steps to pay traffic violation fine online",
+                    "Where to pay traffic fines"
+                ],
+                "responses": [
+                    "To pay your traffic violation fine, you can visit the official eChallan website or the respective state transport department portal. Some courts also accept payments at designated counters. Online payment options may include net banking, debit/credit cards, or digital wallets."
+                ],
+                "context": ["Traffic Fines"]
+            },
+            {
+                "tag": "fast_track_courts",
+                "patterns": [
+                    "What are Fast Track Courts?",
+                    "How do fast track courts work?",
+                    "What types of cases do fast track courts handle?"
+                ],
+                "responses": [
+                    "Fast Track Courts are special courts established to ensure speedy trials for specific types of cases, such as cases involving rape or those under the POCSO Act. These courts aim to reduce the pendency of cases and deliver justice quickly."
+                ],
+                "context": ["Judicial Information"]
+            },
+            {
+                "tag": "live_streaming_court_cases",
+                "patterns": [
+                    "How to access live streaming of court cases?",
+                    "Where can I watch court case live streams?",
+                    "Are court cases streamed online?"
+                ],
+                "responses": [
+                    "Live streaming of certain court cases, particularly in the Supreme Court, is available through official government websites or portals like the National Informatics Centre (NIC). Live streaming is implemented to enhance transparency and public access to judicial proceedings."
+                ],
+                "context": ["Judicial Services"]
+            },
+            {
+                "tag": "efile_case_procedure",
+                "patterns": [
+                    "How do I eFile a case?",
+                    "What is the eFiling process in courts?",
+                    "Steps to eFile a case online"
+                ],
+                "responses": [
+                    "To eFile a case, you must register on the eCourts portal, prepare the necessary documents, and upload them online. After submission, you will receive a reference number for tracking your case. eFiling streamlines case submissions and helps in faster resolution."
+                ],
+                "context": ["Judicial Services"]
+            },
+                {
+                "tag": "ecourts_services_app",
+                "patterns": [
+                    "How to download eCourts Services app?",
+                    "What is eCourts Services mobile app?",
+                    "Can I track my case on eCourts Services?"
+                ],
+                "responses": [
+                    "The eCourts Services mobile app allows users to access information related to cases, court hearings, and judgments. You can download the app from the Google Play Store or Apple App Store and use it to track case status, court orders, and more."
+                ],
+                "context": ["Judicial Services"]
+            },
+            {
+                "tag": "tele_law_services",
+                "patterns": [
+                    "What are Tele Law Services?",
+                    "How can I access Tele Law Services?",
+                    "Can I get legal advice through Tele Law?"
+                ],
+                "responses": [
+                    "Tele Law Services connect individuals, especially in rural areas, with legal experts via video conferencing or phone. To access these services, you can visit Common Service Centers (CSCs) or use the Tele Law portal. This initiative aims to provide affordable legal advice to those in need."
+                ],
+                "context": ["Legal Aid"]
+            },
+            {
+                "tag": "njdg_case_pendency",
+                "patterns": [
+                    "How many cases are pending in India?",
+                    "Check case pendency in courts",
+                    "NJDG case pendency data"
+                ],
+                "responses": [
+                    "The National Judicial Data Grid (NJDG) provides real-time information on pending and disposed cases in courts across India. You can access NJDG online to check the number of cases pending at various levels, including district and subordinate courts."
+                ],
+                "context": ["Judicial Information"]
+            },
+            {
+                "tag": "judicial_training",
+                "patterns": [
+                    "How are judicial officers trained?",
+                    "What is the role of National Judicial Academy?",
+                    "Judicial officer training programs"
+                ],
+                "responses": [
+                    "The National Judicial Academy (NJA) provides training to judicial officers across India. The programs focus on enhancing legal knowledge, improving case management skills, and promoting judicial ethics. The NJA conducts regular workshops, seminars, and training modules."
+                ],
+                "context": ["Judicial Services"]
+            },
+            {
+                "tag": "how_to_check_case_status",
+                "patterns": [
+                    "How do I check the status of my case?",
+                    "Where can I find my case details?",
+                    "Steps to track case status online"
+                ],
+                "responses": [
+                    "To check your case status, you can visit the eCourts portal or use the eCourts Services mobile app. Simply enter your case number, party name, or advocate name to retrieve case details, including the next hearing date and case history."
+                ],
+                "context": ["Judicial Services"]
+            },
+            {
+                "tag": "national_judicial_data_grid",
+                "patterns": [
+                    "What is the National Judicial Data Grid?",
+                    "How does NJDG work?",
+                    "What information is available on NJDG?"
+                ],
+                "responses": [
+                    "The National Judicial Data Grid (NJDG) is a database that provides details of pending and disposed cases in district and subordinate courts across India. NJDG offers insights into case types, pendency timelines, and court-wise data, helping in judicial transparency and efficiency."
+                ],
+                "context": ["Judicial Information"]
+            },
+            {
+                "tag": "laws_on_property_disputes",
+                "patterns": [
+                    "How to resolve property disputes?",
+                    "What are the property dispute laws?",
+                    "Property dispute resolution mechanisms"
+                ],
+                "responses": [
+                    "Property disputes in India are governed by various laws, including the Transfer of Property Act, 1882, and the Indian Contract Act, 1872. Resolution mechanisms include civil litigation, mediation, and arbitration, depending on the nature of the dispute."
+                ],
+                "context": ["Property Law"]
+            },
+            {
+                "tag": "steps_to_file_rti",
+                "patterns": [
+                    "How do I file an RTI?",
+                    "Steps to file an RTI request",
+                    "Where can I file an RTI?"
+                ],
+                "responses": [
+                    "To file a Right to Information (RTI) request, you need to fill out the RTI form and submit it to the relevant public authority, either online or offline. The RTI portal allows citizens to seek information about government activities and decisions."
+                ],
+                "context": ["Public Records"]
+            }
+        ,
+        {
+            "tag": "how_to_get_case_status_updates",
+            "patterns": [
+                "How can I check my case status?",
+                "Where to check case updates?",
+                "Get status of my legal case"
+            ],
+            "responses": [
+                "You can check the status of your case by visiting the eCourts portal or by using the eCourts Services mobile app. You need to provide your case number or party name to get real-time updates on the status of your case."
+            ],
+            "context": ["Judicial Services"]
+        },
+        {
+            "tag": "applying_for_judicial_clerkship",
+            "patterns": [
+                "How do I apply for a judicial clerkship?",
+                "What is the process to become a judicial clerk?",
+                "How can I get a job as a judicial clerk?"
+            ],
+            "responses": [
+                "To apply for a judicial clerkship, you must meet the educational qualifications, typically holding a law degree. You can apply for positions through judicial websites or via notifications from courts or legal recruitment bodies. The selection process usually involves a written examination and an interview."
+            ],
+            "context": ["Court Jobs"]
+        },
+        {
+            "tag": "filing_for_bankruptcy",
+            "patterns": [
+                "How do I file for bankruptcy?",
+                "Steps to declare bankruptcy",
+                "What is the process of bankruptcy?"
+            ],
+            "responses": [
+                "To file for bankruptcy, you need to submit a bankruptcy petition in the appropriate court along with the required financial documentation. Bankruptcy proceedings will assess your assets, liabilities, and ability to repay creditors. Consult a bankruptcy lawyer to assist with the process."
+            ],
+            "context": ["Financial Law"]
+        },
+        {
+            "tag": "registering_a_non_profit_organization",
+            "patterns": [
+                "How can I register a non-profit organization?",
+                "Steps to register an NGO in India",
+                "What is the process to start a non-profit?"
+            ],
+            "responses": [
+                "To register a non-profit organization in India, you can opt for Trust, Society, or Section 8 Company registration. The process involves submitting documentation like the Memorandum of Association, proof of address, and identity verification to the Registrar of Societies or relevant authority."
+            ],
+            "context": ["Corporate Law"]
+        },
+        {
+            "tag": "special_courts_for_national_security",
+            "patterns": [
+                "What are special courts for national security cases?",
+                "Where are the national security courts located?",
+                "How do national security courts function?"
+            ],
+            "responses": [
+                "Special courts for national security cases are designed to handle sensitive matters like terrorism, espionage, and national security threats. These courts operate with enhanced security measures and expedited trials to ensure quick resolution of high-stakes cases."
+            ],
+            "context": ["Special Courts"]
+        },
+        {
+            "tag": "procedure_for_international_extradition",
+            "patterns": [
+                "How does international extradition work?",
+                "What is the process for extraditing a fugitive?",
+                "Can someone be extradited to India?"
+            ],
+            "responses": [
+                "International extradition involves a formal request from one country to another for the surrender of a fugitive. The process is governed by extradition treaties between countries, and the person being extradited must be charged with an extraditable offense. Courts in both countries typically review the case before extradition."
+            ],
+            "context": ["International Law"]
+        },
+        {
+            "tag": "domestic_violence_reporting",
+            "patterns": [
+                "How can I report domestic violence?",
+                "What steps to take for domestic abuse?",
+                "Where to file a domestic violence complaint?"
+            ],
+            "responses": [
+                "To report domestic violence, you can contact your nearest police station or file a complaint with the National Commission for Women or the Protection Officer appointed in your district. Legal assistance is available through Protection of Women from Domestic Violence Act, 2005."
+            ],
+            "context": ["Family Law"]
+        },
+        {
+            "tag": "judicial_college_training",
+            "patterns": [
+                "What is the National Judicial Academy?",
+                "How do judicial officers get training?",
+                "What kind of training do judges undergo?"
+            ],
+            "responses": [
+                "The National Judicial Academy (NJA) provides training programs for judicial officers and judges across India. The academy offers courses on judicial ethics, case management, technology in courts, and more to improve the functioning of the judiciary."
+            ],
+            "context": ["Judicial Services"]
+        },
+        {
+            "tag": "filing_traffic_violation_challenge",
+            "patterns": [
+                "How do I contest a traffic fine?",
+                "Can I challenge a traffic ticket?",
+                "What is the process to appeal a traffic fine?"
+            ],
+            "responses": [
+                "To challenge a traffic violation or fine, you must submit a petition in the local traffic court or through the online ePay system. You will need to present valid reasons and evidence for contesting the fine, such as faulty traffic signals or incorrect penalties."
+            ],
+            "context": ["Traffic Laws"]
+        },
+        {
+            "tag": "obtaining_citizenship_certificate",
+            "patterns": [
+                "How do I apply for Indian citizenship?",
+                "What is the process for obtaining a citizenship certificate?",
+                "Can I get a citizenship certificate if born abroad?"
+            ],
+            "responses": [
+                "To apply for Indian citizenship, you must meet the eligibility criteria under the Citizenship Act, 1955. The application process involves submitting relevant documents like birth certificates, proof of residence, and identity verification. The process may vary depending on your citizenship status and category (by birth, descent, registration, or naturalization)."
+            ],
+            "context": ["Citizenship Law"]
+        },
+        {
+            "tag": "human_rights_protection",
+            "patterns": [
+                "What are the laws protecting human rights in India?",
+                "How can I report a human rights violation?",
+                "Where can I get help for human rights abuse?"
+            ],
+            "responses": [
+                "Human rights in India are protected under the Constitution and enforced by the National Human Rights Commission (NHRC). If you face or witness a human rights violation, you can report it to the NHRC or the relevant state commission. Legal aid and advisory services are available for victims of human rights abuses."
+            ],
+            "context": ["Human Rights Law"]
+        },
+        {
+            "tag": "filing_commercial_dispute",
+            "patterns": [
+                "How can I file a commercial dispute?",
+                "What is the process for settling commercial cases?",
+                "Where do I file a business-related case?"
+            ],
+            "responses": [
+                "To file a commercial dispute, you must submit a complaint to the Commercial Courts, which handle business-related disputes involving contracts, intellectual property, and corporate laws. The court requires proper documentation, such as contracts and evidence of the dispute, to begin the trial."
+            ],
+            "context": ["Corporate Law"]
+        },
+        {
+            "tag": "protection_of_international_workers",
+            "patterns": [
+                "What laws protect Indian workers abroad?",
+                "How can I get help if I'm working overseas?",
+                "Are there protections for Indians working in foreign countries?"
+            ],
+            "responses": [
+                "Indian workers abroad are protected under various international labor laws and bilateral agreements between countries. If you face any issues, you can approach the Indian embassy or consulate in the respective country for assistance. The Indian government provides welfare and legal assistance to workers facing exploitation or legal troubles."
+            ],
+            "context": ["Labor Laws"]
+        },
+        {
+            "tag": "juvenile_justice_system",
+            "patterns": [
+                "How does the juvenile justice system work?",
+                "What are the laws for juvenile crimes?",
+                "Can juveniles be tried in regular courts?"
+            ],
+            "responses": [
+                "The Juvenile Justice (Care and Protection of Children) Act, 2015, governs the legal proceedings for minors involved in criminal activities. Juvenile offenders are typically tried in Juvenile Justice Boards, which focus on rehabilitation and protection of the child's rights. Serious crimes may warrant transferring the case to a regular court, depending on the age and nature of the offense."
+            ],
+            "context": ["Criminal Law"]
+        },
+        {
+            "tag": "registering_a_patent",
+            "patterns": [
+                "How do I register a patent in India?",
+                "What is the process for filing a patent?",
+                "How long does it take to get a patent?"
+            ],
+            "responses": [
+                "To register a patent, you must file an application with the Indian Patent Office, providing details about the invention, claims, and supporting documents. The process involves examination and approval before a patent is granted. On average, it takes 18-24 months for a patent to be granted in India."
+            ],
+            "context": ["Intellectual Property Law"]
+        }
+    
+,
+{
+    "tag": "intellectual_property_infringement",
+    "patterns": [
+        "What is intellectual property infringement?",
+        "How to file a complaint for IP theft?",
+        "What are the remedies for IP infringement?"
+    ],
+    "responses": [
+        "Intellectual property infringement occurs when someone uses or reproduces your protected work without permission. You can file a complaint with the Intellectual Property Office or approach the courts for legal remedies, including injunctions, damages, or settlements."
+    ],
+    "context": ["Intellectual Property Law"]
+},
+{
+    "tag": "family_court_services",
+    "patterns": [
+        "What services are provided by family courts?",
+        "How to file a case in family court?",
+        "What are the functions of a family court?"
+    ],
+    "responses": [
+        "Family courts provide services for marriage dissolution, child custody, maintenance, and domestic violence cases. To file a case, you need to submit relevant documents and fill out the prescribed forms at the family court in your jurisdiction."
+    ],
+    "context": ["Family Law"]
+},
+{
+    "tag": "appeal_process_in_courts",
+    "patterns": [
+        "How do I file an appeal in court?",
+        "What is the appeal process?",
+        "Can I appeal a court decision?"
+    ],
+    "responses": [
+        "To file an appeal, you must submit a petition to the higher court along with the required documentation, including the judgment you are appealing against. The appeal process allows you to challenge the lower court's decision based on legal grounds."
+    ],
+    "context": ["Judicial Services"]
+},
+{
+    "tag": "land_acquisition_laws",
+    "patterns": [
+        "What are the laws for land acquisition?",
+        "How does the government acquire land?",
+        "What is the compensation process for land acquisition?"
+    ],
+    "responses": [
+        "Land acquisition laws in India are primarily governed by the Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013. The process involves government notification, public hearings, and fair compensation for affected landowners."
+    ],
+    "context": ["Property Law"]
+},
+{
+    "tag": "court_fees_and_charges",
+    "patterns": [
+        "What are the court fees for filing a case?",
+        "How much does it cost to file a lawsuit?",
+        "Are there any exemptions for court fees?"
+    ],
+    "responses": [
+        "Court fees vary based on the type of case and jurisdiction. Generally, fees are prescribed by state regulations. Certain categories like indigent litigants may qualify for fee waivers or reductions based on financial status."
+    ],
+    "context": ["Judicial Services"]
+},
+{
+    "tag": "cyber_crime_reporting",
+    "patterns": [
+        "How do I report a cyber crime?",
+        "What are the steps to file a cyber crime complaint?",
+        "Where can I report online fraud?"
+    ],
+    "responses": [
+        "To report a cyber crime, you can file a complaint online through the National Cyber Crime Reporting Portal. Provide detailed information about the incident, including any evidence, to help law enforcement take action."
+    ],
+    "context": ["Cyber Law"]
+},
+{
+    "tag": "consumer_rights",
+    "patterns": [
+        "What are my rights as a consumer?",
+        "How can I file a consumer complaint?",
+        "What is the process for consumer dispute resolution?"
+    ],
+    "responses": [
+        "As a consumer, you have rights that include the right to safety, information, choice, and redress. To file a complaint, you can approach the Consumer Forum or the National Consumer Helpline. Ensure you have evidence of the transaction and issue."
+    ],
+    "context": ["Consumer Law"]
+},
+{
+    "tag": "protection_of_women_under_law",
+    "patterns": [
+        "What laws protect women in India?",
+        "How can I seek help for women's rights violations?",
+        "What are the legal provisions for women's safety?"
+    ],
+    "responses": [
+        "Various laws protect women's rights in India, including the Protection of Women from Domestic Violence Act, 2005, and the Sexual Harassment of Women at Workplace Act, 2013. Women can seek legal help through women’s commissions, NGOs, and legal aid services."
+    ],
+    "context": ["Women's Rights Law"]
+},
+{
+    "tag": "immigration_lawyer_services",
+    "patterns": [
+        "What services do immigration lawyers provide?",
+        "How to find an immigration attorney?",
+        "What can an immigration lawyer help with?"
+    ],
+    "responses": [
+        "Immigration lawyers assist clients with visa applications, green card petitions, asylum claims, and deportation defense. They provide legal advice, represent clients in immigration court, and help navigate complex immigration processes."
+    ],
+    "context": ["Immigration Law"]
+},
+{
+    "tag": "business_liability_insurance",
+    "patterns": [
+        "What is business liability insurance?",
+        "Do I need liability insurance for my business?",
+        "How can I get business liability coverage?"
+    ],
+    "responses": [
+        "Business liability insurance protects against claims of injury or property damage resulting from your business operations. It is advisable to have this coverage, as it helps mitigate financial risks. You can obtain liability insurance through licensed insurance brokers or companies."
+    ],
+    "context": ["Corporate Law"]
+},
+{
+    "tag": "data_privacy_laws",
+    "patterns": [
+        "What are data privacy laws in India?",
+        "How does the Personal Data Protection Bill work?",
+        "What rights do I have regarding my personal data?"
+    ],
+    "responses": [
+        "Data privacy laws in India are governed by the Information Technology Act, 2000, and the Personal Data Protection Bill, which outlines rights related to personal data collection, processing, and storage. You have rights to access, correction, and erasure of your data."
+    ],
+    "context": ["Cyber Law"]
+},
+{
+    "tag": "environmental_law",
+    "patterns": [
+        "What is environmental law?",
+        "How does the law protect the environment?",
+        "What are the consequences of violating environmental regulations?"
+    ],
+    "responses": [
+        "Environmental law encompasses regulations and statutes aimed at protecting the environment and public health. Violating these laws can lead to penalties, fines, and legal action by regulatory agencies to enforce compliance."
+    ],
+    "context": ["Environmental Law"]
+},
+{
+    "tag": "cyber_security_guidelines",
+    "patterns": [
+        "What are the best practices for cyber security?",
+        "How can I protect my online privacy?",
+        "What should I do if I am a victim of cyber crime?"
+    ],
+    "responses": [
+        "To enhance cyber security, follow best practices such as using strong passwords, enabling two-factor authentication, regularly updating software, and being cautious with personal information online. If you are a victim of cyber crime, report it immediately to the authorities."
+    ],
+    "context": ["Cyber Law"]
+},
+{
+    "tag": "legal_aid_services",
+    "patterns": [
+        "What are legal aid services?",
+        "How can I get free legal assistance?",
+        "Who qualifies for legal aid?"
+    ],
+    "responses": [
+        "Legal aid services provide free or low-cost legal assistance to individuals who cannot afford a lawyer. Eligibility for legal aid is typically based on income level and the nature of the legal issue. You can apply for legal aid through local legal aid clinics or organizations."
+    ],
+    "context": ["Judicial Services"]
+}
+,
+{
+    "tag": "department_role",
+    "patterns": [
+        "What is the role of the Department of Justice?",
+        "Tell me about the Department of Justice's responsibilities.",
+        "What does the DoJ do?"
+    ],
+    "responses": [
+        "The Department of Justice enforces the law and protects the interests of the United States by prosecuting federal crimes, representing the government in civil cases, and ensuring fair and impartial administration of justice."
+    ],
+    "context": []
+},
+{
+    "tag": "contact_information",
+    "patterns": [
+        "How can I contact the Department of Justice?",
+        "What is the phone number of the DoJ?",
+        "Can you provide the email address for the Department of Justice?"
+    ],
+    "responses": [
+        "You can contact the Department of Justice at their official website [www.doj.gov](https://doj.gov.in/) or call their helpline at +1-202-514-2000."
+    ],
+    "context": []
+},
+{
+    "tag": "judges_count",
+    "patterns": [
+        "How do I find the number of judges in the Supreme Court?",
+        "What is the total number of judges appointed in the High Courts?",
+        "Can you tell me about the judges in District and Subordinate Courts?"
+    ],
+    "responses": [
+        "The current number of judges in the Supreme Court, High Courts, and District & Subordinate Courts can be accessed through the official judiciary website or the National Judicial Data Grid (NJDG)."
+    ],
+    "context": []
+},
+{
+    "tag": "case_pendency",
+    "patterns": [
+        "What is the pendency of cases in courts?",
+        "How can I check the status of pending cases?",
+        "Can you provide statistics on case pendency?"
+    ],
+    "responses": [
+        "You can check the status of pending cases through the National Judicial Data Grid (NJDG) which provides updated statistics on case pendency across various courts."
+    ],
+    "context": []
+},
+{
+    "tag": "traffic_fine_payment",
+    "patterns": [
+        "What is the procedure to pay a traffic fine?",
+        "How can I pay my traffic violation fine?",
+        "What steps do I need to follow to pay a traffic fine?"
+    ],
+    "responses": [
+        "To pay a traffic fine, you can visit the official website of your local traffic authority or use online payment portals that facilitate traffic fine payments."
+    ],
+    "context": []
+},
+{
+    "tag": "live_streaming_court_cases",
+    "patterns": [
+        "How can I live stream court cases?",
+        "Is it possible to watch court proceedings live?",
+        "What is the process for live streaming court cases?"
+    ],
+    "responses": [
+        "Live streaming of court cases is available on the official website of the Department of Justice or the respective court's website, depending on the jurisdiction."
+    ],
+    "context": []
+},
+{
+    "tag": "eFiling_ePay",
+    "patterns": [
+        "What are the steps for eFiling and ePay?",
+        "How do I file a case electronically?",
+        "Can you explain the ePay process?"
+    ],
+    "responses": [
+        "To eFile a case, visit the official judiciary website, register for an account, and follow the instructions for filing your documents electronically. For ePay, you can make payments through the same portal."
+    ],
+    "context": []
+},
+{
+    "tag": "fast_track_courts",
+    "patterns": [
+        "How does the Fast Track court system work?",
+        "What are the benefits of Fast Track courts?",
+        "Can you explain the Fast Track courts?"
+    ],
+    "responses": [
+        "Fast Track courts are specialized courts set up to expedite the trial process for sensitive cases, such as those involving sexual offenses or child abuse, ensuring quicker justice delivery."
+    ],
+    "context": []
+},
+{
+    "tag": "download_eCourts_app",
+    "patterns": [
+        "Where can I download the eCourts Services mobile app?",
+        "How do I access the eCourts mobile application?",
+        "Is there an app for eCourts services?"
+    ],
+    "responses": [
+        "The eCourts Services mobile app can be downloaded from the Google Play Store or the Apple App Store by searching for 'eCourts Services.'"
+    ],
+    "context": []
+},
+{
+    "tag": "tele_law_services",
+    "patterns": [
+        "What are Tele Law services?",
+        "How can I avail Tele Law services?",
+        "Can you explain Tele Law?"
+    ],
+    "responses": [
+        "Tele Law services provide legal assistance through telephonic consultations with lawyers, allowing individuals to seek legal advice easily from their homes."
+    ],
+    "context": []
+}
+        ,
+              {
+                  "tag": "10_las_vegas_men_indicted_\r\nfor_falsifying_vehicle_emissions_tests",
+                  "patterns": [
+                      "10 Las Vegas Men Indicted \r\nfor Falsifying Vehicle Emissions Tests",
+                      "Tell me about 10 Las Vegas Men Indicted \r\nfor Falsifying Vehicle Emissions Tests",
+                      "What happened on 2010-01-08T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      "  WASHINGTON\u2014A federal grand jury in Las Vegas today returned indictments against 10 Nevada-certified emissions testers for falsifying vehicle emissions test reports, the Justice Department announced...."
+                  ],
+                  "context": [
+                      "Environment and Natural Resources Division"
+                  ]
+              },
+             
+              {
+                  "tag": "12th_former_officer_at_roxbury_correctional_institution_pleads_guilty_and_admits_assault_of_an_inmate",
+                  "patterns": [
+                      "12th Former Officer at Roxbury Correctional Institution Pleads Guilty and Admits Assault of an Inmate",
+                      "Tell me about 12th Former Officer at Roxbury Correctional Institution Pleads Guilty and Admits Assault of an Inmate",
+                      "What happened on 2014-01-10T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      "Michael Morgan, formerly an officer at Roxbury Correctional Institution (RCI) in Hagerstown, Md., pleaded guilty today to assaulting an inmate on March 9, 2008, announced the Justice Department and th..."
+                  ],
+                  "context": [
+                      "Civil Rights Division",
+                      "Civil Rights - Criminal Section"
+                  ]
+              },
+              {
+                  "tag": "14_indicted_in_connection_with_new_england_compounding_center_and_nationwide_fungal_meningitis_outbreak",
+                  "patterns": [
+                      "14 Indicted in Connection with New England Compounding Center and Nationwide Fungal Meningitis Outbreak",
+                      "Tell me about 14 Indicted in Connection with New England Compounding Center and Nationwide Fungal Meningitis Outbreak",
+                      "What happened on 2014-12-17T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      "A 131-count criminal indictment was unsealed today in Boston in connection with the 2012 nationwide fungal meningitis outbreak, the Justice Department announced.\u00a0 Barry J. Cadden, owner and head pharm..."
+                  ],
+                  "context": [
+                      "Civil Division"
+                  ]
+              },
+              {
+                  "tag": "14_individuals_charged_with_trafficking_identities_of_puerto_rican_u.s._citizens",
+                  "patterns": [
+                      "14 Individuals Charged with Trafficking Identities of Puerto Rican U.S. Citizens",
+                      "Tell me about 14 Individuals Charged with Trafficking Identities of Puerto Rican U.S. Citizens",
+                      "What happened on 2014-08-12T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "  Fourteen  individuals were charged in three indictments in Puerto Rico with conspiracy to  commit identification fraud, money laundering, aggravated identity theft and  passport fraud in connection ..."
+                  ],
+                  "context": [
+                      "Criminal Division"
+                  ]
+              },
+              {
+                  "tag": "15th_member_of_washington,_d.c._based_identity_theft_ring_pleads_guilty",
+                  "patterns": [
+                      "15th Member of Washington, D.C.-Based Identity Theft Ring Pleads Guilty",
+                      "Tell me about 15th Member of Washington, D.C.-Based Identity Theft Ring Pleads Guilty",
+                      "What happened on 2015-01-23T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      "Defendant Admits To Targeting Parents Of Hospitalized Children, Among Others A Maryland woman pleaded guilty today in connection with her involvement in a sophisticated identity theft ring that stole ..."
+                  ],
+                  "context": [
+                      "Criminal Division"
+                  ]
+              },
+              {
+                  "tag": "168_juveniles_recovered_in_nationwide_operation_targeting_commercial_child_sex_trafficking",
+                  "patterns": [
+                      "168 Juveniles Recovered in Nationwide Operation Targeting Commercial Child Sex Trafficking",
+                      "Tell me about 168 Juveniles Recovered in Nationwide Operation Targeting Commercial Child Sex Trafficking",
+                      "What happened on 2014-06-23T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "  During the past week, the FBI, its local, state, and federal law enforcement  partners, and the National Center for Missing and Exploited Children (NCMEC)  conducted Operation Cross Country VIII, a ..."
+                  ],
+                  "context": [
+                      "Criminal Division"
+                  ]
+              },
+              {
+                  "tag": "17_members_and_associates_of_violent_gang_indicted",
+                  "patterns": [
+                      "17 Members and Associates of Violent Gang Indicted",
+                      "Tell me about 17 Members and Associates of Violent Gang Indicted",
+                      "What happened on 2009-02-26T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      "  WASHINGTON \u2013 A federal grand jury in Lubbock, Texas, has charged 17 members and associates of the violent gang known as the Almighty Latin King and Queen Nation (ALKQN) with various charges related ..."
+                  ],
+                  "context": [
+                      "Criminal Division"
+                  ]
+              },
+              {
+                  "tag": "19_arrested_in_international_round_up_on_federal_fraud_charges",
+                  "patterns": [
+                      "19 Arrested in International Round Up on Federal Fraud Charges",
+                      "Tell me about 19 Arrested in International Round Up on Federal Fraud Charges",
+                      "What happened on 2014-05-21T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      " Fifteen individuals were arrested today in South Africa, Canada, California, Wisconsin and Indiana, pursuant to an eight-count federal indictment on fraud charges filed in the Southern District of Mi..."
+                  ],
+                  "context": [
+                      "Criminal Division"
+                  ]
+              },
+              {
+                  "tag": "19_members_and_associates_of_tennessee_mongols_motorcycle_gang_charged_with_racketeering_conspiracy_including_murder_and_kidnapping",
+                  "patterns": [
+                      "19 Members and Associates of Tennessee Mongols Motorcycle Gang Charged With Racketeering Conspiracy Including Murder and Kidnapping",
+                      "Tell me about 19 Members and Associates of Tennessee Mongols Motorcycle Gang Charged With Racketeering Conspiracy Including Murder and Kidnapping",
+                      "What happened on 2018-03-08T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      "A 62-count second-superseding indictment was returned by a federal grand jury in Nashville, Tennessee yesterday, charging 19 members and associates of the Clarksville, Tennessee chapter of the Mongols..."
+                  ],
+                  "context": [
+                      "Criminal Division",
+                      "USAO - Tennessee, Middle"
+                  ]
+              },
+              {
+                  "tag": "$19_million_stolen_identity_refund_fraud_conspiracy_charged_in_alaska",
+                  "patterns": [
+                      "$19 Million Stolen Identity Refund Fraud Conspiracy Charged in Alaska",
+                      "Tell me about $19 Million Stolen Identity Refund Fraud Conspiracy Charged in Alaska",
+                      "What happened on 2012-07-20T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "      A grand jury sitting in Anchorage, Ala., returned a 90-count superseding indictment yesterday against 11 defendants, the Justice Department announced. The superseding indictment included a consp..."
+                  ],
+                  "context": [
+                      "Tax Division"
+                  ]
+              },
+              
+      
+              {
+                  "tag": "21st_century_oncology_to_pay_$19.75_million_to_settle_alleged_false_claims_for_unnecessary_laboratory_tests_",
+                  "patterns": [
+                      "21st Century Oncology to Pay $19.75 Million to Settle Alleged False Claims for Unnecessary Laboratory Tests ",
+                      "Tell me about 21st Century Oncology to Pay $19.75 Million to Settle Alleged False Claims for Unnecessary Laboratory Tests ",
+                      "What happened on 2015-12-18T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      "21st Century Oncology LLC, has agreed to pay $19.75 million to the government to resolve allegations that it violated the False Claims Act by billing federal health care programs for laboratory tests ..."
+                  ],
+                  "context": [
+                      "Civil Division"
+                  ]
+              },
+              {
+                  "tag": "21st_century_oncology_to_pay_$26_million_to_settle_false_claims_act_allegations",
+                  "patterns": [
+                      "21st Century Oncology to Pay $26 Million to Settle False Claims Act Allegations",
+                      "Tell me about 21st Century Oncology to Pay $26 Million to Settle False Claims Act Allegations",
+                      "What happened on 2017-12-12T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      "21st Century Oncology Inc. and certain of its subsidiaries and affiliates have agreed to pay $26 million to the government to resolve a self-disclosure relating to the submission of false attestations..."
+                  ],
+                  "context": [
+                      "Civil Division",
+                      "USAO - Florida, Middle"
+                  ]
+              },
+            
+              {
+                  "tag": "_24_defendants_sentenced_in_multimillion_dollar_india_based_call_center_scam_targeting_u.s._victims_",
+                  "patterns": [
+                      " 24 Defendants Sentenced in Multimillion Dollar India-Based Call Center Scam Targeting U.S. Victims ",
+                      "Tell me about  24 Defendants Sentenced in Multimillion Dollar India-Based Call Center Scam Targeting U.S. Victims ",
+                      "What happened on 2018-07-20T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "Twenty-one members of a massive India-based fraud and money laundering conspiracy that defrauded thousands of U.S. residents of hundreds of millions of dollars were sentenced this week to terms of imp..."
+                  ],
+                  "context": [
+                      "Criminal Division",
+                      "USAO - Texas, Southern"
+                  ]
+              },
+              
+              {
+                  "tag": "on_the_25th_anniversary_of_the_ada,_the_justice_department_signs_agreement_to_bring_the_promise_of_the_ada_to_lumpkin_county,_georgia",
+                  "patterns": [
+                      "On the 25th Anniversary of the ADA, the Justice Department Signs Agreement to Bring the Promise of the ADA to Lumpkin County, Georgia",
+                      "Tell me about On the 25th Anniversary of the ADA, the Justice Department Signs Agreement to Bring the Promise of the ADA to Lumpkin County, Georgia",
+                      "What happened on 2015-07-23T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "The Department of Justice announced an agreement today under its Project Civic Access (PCA) initiative with Lumpkin County, Georgia, to address accessibility issues in the county\u2019s services, programs,..."
+                  ],
+                  "context": [
+                      "Civil Rights Division",
+                      "Civil Rights - Disability Rights Section"
+                  ]
+              },
+              {
+                  "tag": "30_members_and_associates_of_the_\"nine_trey_gangster_blood\"_gang_federally_indicted",
+                  "patterns": [
+                      "30 Members and Associates of The \"Nine Trey Gangster Blood\" Gang Federally Indicted",
+                      "Tell me about 30 Members and Associates of The \"Nine Trey Gangster Blood\" Gang Federally Indicted",
+                      "What happened on 2017-10-23T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "Federal agents have arrested 17 members and associates of the Nine Trey Gangster Bloods criminal street gang on charges of RICO conspiracy and related charges stemming from an indictment returned by a..."
+                  ],
+                  "context": [
+                      "Criminal Division",
+                      "USAO - Georgia, Northern"
+                  ]
+              },
+              {
+                  "tag": "32_hospitals_to_pay_u.s._more_than_$28_million_to_resolve_false_claims_act_allegations_related_to_kyphoplasty_billing",
+                  "patterns": [
+                      "32 Hospitals to Pay U.S. More Than $28 Million to Resolve False Claims Act Allegations Related to Kyphoplasty Billing",
+                      "Tell me about 32 Hospitals to Pay U.S. More Than $28 Million to Resolve False Claims Act Allegations Related to Kyphoplasty Billing",
+                      "What happened on 2015-12-18T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      "Thirty-two hospitals located throughout 15 states have agreed to pay the United States a total of more than $28 million to settle allegations that the health care facilities submitted false claims to ..."
+                  ],
+                  "context": [
+                      "Civil Division"
+                  ]
+              },
+              {
+                  "tag": "34_alleged_aryan_brotherhood_of_texas_gang_members_\r\nindicted_on_federal_racketeering_charges",
+                  "patterns": [
+                      "34 Alleged Aryan Brotherhood of Texas Gang Members \r\nIndicted on Federal Racketeering Charges",
+                      "Tell me about 34 Alleged Aryan Brotherhood of Texas Gang Members \r\nIndicted on Federal Racketeering Charges",
+                      "What happened on 2012-11-09T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      "    Thirty-four alleged members of the Aryan Brotherhood of Texas gang (ABT), including four of its most senior leaders,\u00a0 have been indicted by a federal grand jury in Houston for allegedly conspiring..."
+                  ],
+                  "context": [
+                      "Criminal Division"
+                  ]
+              },
+             
+            
+              {
+                  "tag": "35_members_and_associates_of_bloods_gang_plead_guilty_to_racketeering_conspiracy_and_related_charges,_including_drug_trafficking_and_wire_fraud",
+                  "patterns": [
+                      "35 Members and Associates of Bloods Gang Plead Guilty to Racketeering Conspiracy and Related Charges, Including Drug Trafficking and Wire Fraud",
+                      "Tell me about 35 Members and Associates of Bloods Gang Plead Guilty to Racketeering Conspiracy and Related Charges, Including Drug Trafficking and Wire Fraud",
+                      "What happened on 2018-03-12T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "Thirty-five members and associates of the Nine Trey Gangsters set of the United Blood Nation (UBN) street gang, including a \u201cGodfather\u201d as well as other high-ranking leaders of the organization, have ..."
+                  ],
+                  "context": [
+                      "Criminal Division",
+                      "USAO - North Carolina, Western"
+                  ]
+              },
+              {
+                  "tag": "3,800_gang_members_charged_in_operation_spanning_united_states_and_central_america",
+                  "patterns": [
+                      "3,800 Gang Members Charged in Operation Spanning United States and Central America",
+                      "Tell me about 3,800 Gang Members Charged in Operation Spanning United States and Central America",
+                      "What happened on 2017-09-29T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "Senior law enforcement officials from the United States, El Salvador, Guatemala and Honduras announced here today criminal charges against more than 3,800 MS-13 and 18th Street gang members in the Uni..."
+                  ],
+                  "context": [
+                      "Criminal Division"
+                  ]
+              },
+              {
+                  "tag": "3m_company_abandons_its_proposed_acquisition_of_avery_dennison\u2019s_office_and_\r\nconsumer_products_group_after_justice_department_threatens_lawsuit",
+                  "patterns": [
+                      "3M Company Abandons Its Proposed Acquisition of Avery Dennison\u2019s Office and \r\nConsumer Products Group After Justice Department Threatens Lawsuit",
+                      "Tell me about 3M Company Abandons Its Proposed Acquisition of Avery Dennison\u2019s Office and \r\nConsumer Products Group After Justice Department Threatens Lawsuit",
+                      "What happened on 2012-09-04T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "    WASHINGTON \u2014 3M Co. abandoned its plan to acquire Avery Dennison Corp.\u2019s Office and Consumer Products Group, its closest competitor in the sale of adhesive-backed labels and sticky notes, after th..."
+                  ],
+                  "context": [
+                      "Antitrust Division"
+                  ]
+              },
+              {
+                  "tag": "3m_company_agrees_to_pay_$9.1_million_to_resolve_allegations_that_it_supplied_the_united_states_with_defective_dual_ended_combat_arms_earplugs",
+                  "patterns": [
+                      "3M Company Agrees to Pay $9.1 Million to Resolve Allegations That it Supplied the United States With Defective Dual-Ended Combat Arms Earplugs",
+                      "Tell me about 3M Company Agrees to Pay $9.1 Million to Resolve Allegations That it Supplied the United States With Defective Dual-Ended Combat Arms Earplugs",
+                      "What happened on 2018-07-26T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "The Department of Justice announced today that 3M Company (3M), headquartered in St. Paul, Minnesota, has agreed to pay $9.1 million to resolve allegations that it knowingly sold the dual-ended Combat..."
+                  ],
+                  "context": [
+                      "Civil Division",
+                      "USAO - South Carolina"
+                  ]
+              },
+              {
+                  "tag": "41_gang_members_and_associates_in_five_districts_charged_with_crimes_including_racketeering,_murder,_drug_trafficking_and_firearms_trafficking",
+                  "patterns": [
+                      "41 Gang Members and Associates in Five Districts Charged with Crimes Including Racketeering, Murder, Drug Trafficking and Firearms Trafficking",
+                      "Tell me about 41 Gang Members and Associates in Five Districts Charged with Crimes Including Racketeering, Murder, Drug Trafficking and Firearms Trafficking",
+                      "What happened on 2011-02-09T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      "  WASHINGTON \u2013 Forty-one members of various street gangs have been charged in indictments or criminal complaints unsealed today in five judicial districts, the Department of Justice announced today.  ..."
+                  ],
+                  "context": [
+                      "Criminal Division"
+                  ]
+              },
+              {
+                  "tag": "50_individuals_charged_in_puerto_rico_with_allegedly_trafficking_identities_of_puerto_rican_us_citizens",
+                  "patterns": [
+                      "50 Individuals Charged in Puerto Rico with Allegedly Trafficking Identities of Puerto Rican Us Citizens",
+                      "Tell me about 50 Individuals Charged in Puerto Rico with Allegedly Trafficking Identities of Puerto Rican Us Citizens",
+                      "What happened on 2012-01-11T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      "  WASHINGTON \u2013 Fifty individuals were charged in an indictment unsealed today in Puerto Rico with conspiracy to commit identification fraud in connection with their alleged roles in a scheme to traffi..."
+                  ],
+                  "context": [
+                      "Criminal Division"
+                  ]
+              },
+             
+              {
+                  "tag": "abb_ltd_and_two_subsidiaries_resolve_foreign_corrupt_practices_act_investigation_and_will_pay_$19_million_in_criminal_penalties",
+                  "patterns": [
+                      "ABB Ltd and Two Subsidiaries Resolve Foreign Corrupt Practices Act Investigation and Will Pay $19 Million in Criminal Penalties",
+                      "Tell me about ABB Ltd and Two Subsidiaries Resolve Foreign Corrupt Practices Act Investigation and Will Pay $19 Million in Criminal Penalties",
+                      "What happened on 2010-09-29T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "  WASHINGTON \u2013 ABB Ltd, a Swiss corporation, and two of its subsidiaries have resolved charges related to violations of the Foreign Corrupt Practices Act (FCPA), announced Assistant Attorney General L..."
+                  ],
+                  "context": [
+                      "Criminal Division"
+                  ]
+              },
+              {
+                  "tag": "abbott_laboratories_pays_u.s._$5.475_million_to_settle_claims_that_company_paid_kickbacks_to_physicians",
+                  "patterns": [
+                      "Abbott Laboratories Pays U.S. $5.475 Million to Settle Claims That Company Paid Kickbacks to Physicians",
+                      "Tell me about Abbott Laboratories Pays U.S. $5.475 Million to Settle Claims That Company Paid Kickbacks to Physicians",
+                      "What happened on 2013-12-27T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      "    Abbott Laboratories   has   agreed   to   pay   the      United     States $5.475   million   to   resolve   allegations   that   it   violated   the      False  Claims      Act     by     paying ..."
+                  ],
+                  "context": [
+                      "Civil Division"
+                  ]
+              },
+              {
+                  "tag": "abbott_laboratories_sentenced_for_misbranding_drug",
+                  "patterns": [
+                      "Abbott Laboratories Sentenced for Misbranding Drug",
+                      "Tell me about Abbott Laboratories Sentenced for Misbranding Drug",
+                      "What happened on 2012-10-02T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "  Pharmaceutical manufacturer Abbott Laboratories Inc. was sentenced by U.S. District Court Judge Samuel G. Wilson of the Western District of Virginia in connection with its guilty plea related to its..."
+                  ],
+                  "context": [
+                      "Civil Division"
+                  ]
+              },
+              {
+                  "tag": "abbott_labs_to_pay_$1.5_billion_to_resolve_criminal_&_civil_investigations_of_off_label_promotion_of_depakote",
+                  "patterns": [
+                      "Abbott Labs to Pay $1.5 Billion to Resolve Criminal & Civil Investigations of Off-label Promotion of Depakote",
+                      "Tell me about Abbott Labs to Pay $1.5 Billion to Resolve Criminal & Civil Investigations of Off-label Promotion of Depakote",
+                      "What happened on 2012-05-07T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "Global Health Care Company Abbott Laboratories Inc. has pleaded guilty and agreed to pay $1.5 billion to resolve its criminal and civil liability arising from the company\u2019s unlawful promotion of the p..."
+                  ],
+                  "context": [
+                      "Civil Division"
+                  ]
+              },
+              {
+                  "tag": "accenture_pays_u.s._$63.675_million_to_settle_false_claims_act_allegations",
+                  "patterns": [
+                      "Accenture Pays U.S. $63.675 Million to Settle False Claims Act Allegations",
+                      "Tell me about Accenture Pays U.S. $63.675 Million to Settle False Claims Act Allegations",
+                      "What happened on 2011-09-12T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "WASHINGTON \u2013 Accenture LLP has agreed to pay the United States $63.675 million to resolve a whistleblower lawsuit, the Justice Department announced today. The lawsuit, filed in the U.S. District Court..."
+                  ],
+                  "context": [
+                      "Civil Division"
+                  ]
+              },
+              {
+                  "tag": "accomplice_to_fugitive_lawyer_pleads_guilty_to_conspiracy_to_escape_",
+                  "patterns": [
+                      "Accomplice to Fugitive Lawyer Pleads Guilty to Conspiracy to Escape ",
+                      "Tell me about Accomplice to Fugitive Lawyer Pleads Guilty to Conspiracy to Escape ",
+                      "What happened on 2018-03-30T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "An Eastern Kentucky man pleaded guilty today for his role in assisting a former Social Security disability lawyer escape from federal custody. Acting Assistant Attorney General John P. Cronan of the J..."
+                  ],
+                  "context": [
+                      "Criminal Division",
+                      "USAO - Kentucky, Eastern"
+                  ]
+              },
+              {
+                  "tag": "accountant_for_former_arizona_congressman_convicted_of_embezzling_insurance_premiums_and_conspiracy",
+                  "patterns": [
+                      "Accountant for Former Arizona Congressman Convicted of Embezzling Insurance Premiums and Conspiracy",
+                      "Tell me about Accountant for Former Arizona Congressman Convicted of Embezzling Insurance Premiums and Conspiracy",
+                      "What happened on 2010-07-09T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "  WASHINGTON - Dwayne Lequire, 51, of Elgin, Ariz., was found guilty by a federal jury in Tucson, Ariz., late yesterday of eight counts of embezzling insurance premiums and one count of conspiracy, an..."
+                  ],
+                  "context": [
+                      "Criminal Division"
+                  ]
+              },
+              {
+                  "tag": "accountant_for_michael_\u2018the_situation\u2019_sorrentino_admits_tax_fraud_conspiracy",
+                  "patterns": [
+                      "Accountant for Michael \u2018The Situation\u2019 Sorrentino Admits Tax Fraud Conspiracy",
+                      "Tell me about Accountant for Michael \u2018The Situation\u2019 Sorrentino Admits Tax Fraud Conspiracy",
+                      "What happened on 2015-12-16T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      "The former tax preparer for television personality Michael \u201cThe Situation\u201d Sorrentino and his brother, Marc Sorrentino, today admitted filing fraudulent tax returns on their behalf, Acting Assistant A..."
+                  ],
+                  "context": [
+                      "Tax Division"
+                  ]
+              },
+             
+              {
+                  "tag": "additional_defendants_sentenced_for_roles_in_sex_trafficking_scheme",
+                  "patterns": [
+                      "Additional Defendants Sentenced for Roles in Sex Trafficking Scheme",
+                      "Tell me about Additional Defendants Sentenced for Roles in Sex Trafficking Scheme",
+                      "What happened on 2016-06-08T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "Sex Trafficking Scheme Used Threats, Violence and Coercion to Compel\u00a0Women into Prostitution in New Orleans and Elsewhere Additional defendants were sentenced today for their respective roles in a sex..."
+                  ],
+                  "context": [
+                      "Civil Rights Division",
+                      "USAO - Louisiana, Eastern"
+                  ]
+              },
+              {
+                  "tag": "additional_former_correctional_officer_pleads_guilty_to_beating_of_handcuffed_and_shackled_inmate_at_angola_state_prison",
+                  "patterns": [
+                      "Additional Former Correctional Officer Pleads Guilty to Beating of Handcuffed and Shackled Inmate at Angola State Prison",
+                      "Tell me about Additional Former Correctional Officer Pleads Guilty to Beating of Handcuffed and Shackled Inmate at Angola State Prison",
+                      "What happened on 2017-11-02T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "A former supervisory correctional officer at Louisiana State Penitentiary in Angola, Louisiana, pleaded guilty yesterday in connection with the beating of a handcuffed and shackled inmate, in addition..."
+                  ],
+                  "context": [
+                      "Civil Rights Division",
+                      "USAO - Louisiana, Middle"
+                  ]
+              },
+              {
+                  "tag": "additional_members_of_detroit_based_gang_\u201cyns\u201d_charged_with_racketeering,_kidnapping,_and_trafficking_crack_cocaine",
+                  "patterns": [
+                      "Additional Members of Detroit-Based Gang \u201cYNS\u201d Charged with Racketeering, Kidnapping, and Trafficking Crack Cocaine",
+                      "Tell me about Additional Members of Detroit-Based Gang \u201cYNS\u201d Charged with Racketeering, Kidnapping, and Trafficking Crack Cocaine",
+                      "What happened on 2018-01-25T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      "New charges were filed yesterday in the prosecution of the northwest Detroit street gang Young and Scantless (YNS).\u00a0  \u00a0 Acting Assistant Attorney General John P. Cronan of the Justice Department\u2019s Cri..."
+                  ],
+                  "context": [
+                      "Criminal Division",
+                      "USAO - Michigan, Eastern"
+                  ]
+              },
+              {
+                  "tag": "adm_subsidiary_pleads_guilty_to\r\nconspiracy_to_violate_the_foreign_corrupt_practices_act",
+                  "patterns": [
+                      "ADM Subsidiary Pleads Guilty to\r\nConspiracy to Violate the Foreign Corrupt Practices Act",
+                      "Tell me about ADM Subsidiary Pleads Guilty to\r\nConspiracy to Violate the Foreign Corrupt Practices Act",
+                      "What happened on 2013-12-20T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      " A subsidiary of Archer Daniels Midland Company (ADM) pleaded guilty today and has agreed to pay more than $17 million in criminal fines to resolve charges that it paid bribes through vendors to Ukrai..."
+                  ],
+                  "context": [
+                      "Criminal Division"
+                  ]
+              },
+              {
+                  "tag": "administrator_and_biller_of_illinois_physician_group_convicted_in_$4.5_million_medicare_fraud_scheme",
+                  "patterns": [
+                      "Administrator and Biller of Illinois Physician Group Convicted in $4.5 Million Medicare Fraud Scheme",
+                      "Tell me about Administrator and Biller of Illinois Physician Group Convicted in $4.5 Million Medicare Fraud Scheme",
+                      "What happened on 2015-05-18T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "A federal jury in Chicago on May 15, 2015, convicted the administrator and biller of a Schaumburg, Illinois, in-home visiting physician group for their participation in a $4.5 million health care frau..."
+                  ],
+                  "context": [
+                      "Criminal Division"
+                  ]
+              },
+              {
+                  "tag": "administrator_and_employee_of_two_miami_home_health_companies_sentenced_for_role_in_$74_million_health_care_fraud_scheme",
+                  "patterns": [
+                      "Administrator and Employee of Two Miami Home Health Companies Sentenced for Role in $74 Million Health Care Fraud Scheme",
+                      "Tell me about Administrator and Employee of Two Miami Home Health Companies Sentenced for Role in $74 Million Health Care Fraud Scheme",
+                      "What happened on 2013-10-23T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "  The administrator and employee of two Miami health care companies was sentenced today to serve 60 months in prison for her participation in a $74 million home health Medicare fraud scheme.   Acting ..."
+                  ],
+                  "context": [
+                      "Criminal Division"
+                  ]
+              },
+              {
+                  "tag": "administrator_of_chicago_area_home_visiting_physician_practice_sentenced_to_more_than_seven_years_in_prison_for_role_in_$4_million_health_care_fraud_scheme",
+                  "patterns": [
+                      "Administrator of Chicago-Area Home Visiting Physician Practice Sentenced to More Than Seven Years in Prison for Role in $4 Million Health Care Fraud Scheme",
+                      "Tell me about Administrator of Chicago-Area Home Visiting Physician Practice Sentenced to More Than Seven Years in Prison for Role in $4 Million Health Care Fraud Scheme",
+                      "What happened on 2015-09-04T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "The lead administrator of a Chicago-area visiting physician practice was sentenced to 87 months in prison for his role in a $4 million health care fraud scheme. Assistant Attorney General Leslie R. Ca..."
+                  ],
+                  "context": [
+                      "Criminal Division",
+                      "USAO - Illinois, Northern"
+                  ]
+              },
+              {
+                  "tag": "administrator_of_miami_area_home_health_agency_convicted_of_conspiracy_to_commit_$2.5_million_medicare_fraud_scheme",
+                  "patterns": [
+                      "Administrator of Miami-Area Home Health Agency Convicted of Conspiracy to Commit $2.5 Million Medicare Fraud Scheme",
+                      "Tell me about Administrator of Miami-Area Home Health Agency Convicted of Conspiracy to Commit $2.5 Million Medicare Fraud Scheme",
+                      "What happened on 2016-12-15T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      "The administrator of a Miami-area home health agency was convicted today for his role in a $2.5 million Medicare fraud scheme. Assistant Attorney General Leslie R. Caldwell of the Justice Department\u2019s..."
+                  ],
+                  "context": [
+                      "Criminal Division",
+                      "Criminal - Criminal Fraud Section",
+                      "USAO - Florida, Southern"
+                  ]
+              },
+              {
+                  "tag": "administrator_of_miami_area_home_health_agency_sentenced_to_126_months_in_prison_for_involvement_in_$2.5_million_medicare_fraud_scheme",
+                  "patterns": [
+                      "Administrator of Miami-Area Home Health Agency Sentenced to 126 Months in Prison for Involvement in $2.5 Million Medicare Fraud Scheme",
+                      "Tell me about Administrator of Miami-Area Home Health Agency Sentenced to 126 Months in Prison for Involvement in $2.5 Million Medicare Fraud Scheme",
+                      "What happened on 2017-02-24T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      "Today, the administrator of a Miami-area home health agency was sentenced to a 126 month prison term for his role in a $2.5 million Medicare fraud scheme.\u00a0 Acting Assistant Attorney General Kenneth A...."
+                  ],
+                  "context": [
+                      "Criminal Division",
+                      "Criminal - Criminal Fraud Section",
+                      "USAO - Florida, Southern"
+                  ]
+              },
+              {
+                  "tag": "administrator_sentenced_to_68_months_in_prison_for_role_in_$6_million_miami_home_health_care_fraud_scheme",
+                  "patterns": [
+                      "Administrator Sentenced to 68 Months in Prison for Role in $6 Million Miami Home Health Care Fraud Scheme",
+                      "Tell me about Administrator Sentenced to 68 Months in Prison for Role in $6 Million Miami Home Health Care Fraud Scheme",
+                      "What happened on 2014-09-29T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "An administrator of a Miami home health care company, Professional Medical Home Health LLC, was sentenced to serve 68 months in prison and ordered to pay $6,257,142 million in restitution today for he..."
+                  ],
+                  "context": [
+                      "Criminal Division"
+                  ]
+              },
+              {
+                  "tag": "admitted_associate_of_new_england_la_cosa_nostra_sentenced_to_prison_for_participation_in_hobbs_act_extortion_conspiracy",
+                  "patterns": [
+                      "Admitted Associate of New England La Cosa Nostra Sentenced to Prison for Participation in Hobbs Act Extortion Conspiracy",
+                      "Tell me about Admitted Associate of New England La Cosa Nostra Sentenced to Prison for Participation in Hobbs Act Extortion Conspiracy",
+                      "What happened on 2012-07-26T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "    Albino \u201cAlbie\u201d Folcarelli,     54, of Johnston, R.I., an admitted associate of the New England La Cosa Nostra (NELCN), was sentenced in U.S. District Court in Providence, R.I., today to serve 84 m..."
+                  ],
+                  "context": [
+                      "Criminal Division"
+                  ]
+              },
+              {
+                  "tag": "admitted_gang_member_sentenced_for_federal_racketeering_charges",
+                  "patterns": [
+                      "Admitted Gang Member Sentenced for Federal Racketeering Charges",
+                      "Tell me about Admitted Gang Member Sentenced for Federal Racketeering Charges",
+                      "What happened on 2014-07-24T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "  Armando Jose Velasquez, aka \u201cMoney,\u201d 27, of East Chicago, Indiana, was sentenced  today to serve 305 months in prison on federal racketeering charges relating to  a Dec. 3, 2011, attempted murder.As..."
+                  ],
+                  "context": [
+                      "Criminal Division"
+                  ]
+              },
+              {
+                  "tag": "admitted_new_england_la_cosa_nostra_leader_\r\nsentenced_to_108_months_in_federal_prison",
+                  "patterns": [
+                      "Admitted New England La Cosa Nostra Leader \r\nSentenced to 108 Months in Federal Prison",
+                      "Tell me about Admitted New England La Cosa Nostra Leader \r\nSentenced to 108 Months in Federal Prison",
+                      "What happened on 2012-06-13T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "  WASHINGTON \u2013 Edward \u201cEddy\u201d Lato, 65, of Providence, R.I., an admitted capo regime in the New England La Cosa Nostra (NELCN), was sentenced in U.S. District Court in Providence today to 108 months in..."
+                  ],
+                  "context": [
+                      "Criminal Division"
+                  ]
+              },
+              {
+                  "tag": "adult_foster_care_facility_owners_and_physical_therapist_plead\r\nguilty_in_medicare_home_health_fraud_scheme",
+                  "patterns": [
+                      "Adult Foster Care Facility Owners and Physical Therapist Plead\r\nGuilty in Medicare Home Health Fraud Scheme",
+                      "Tell me about Adult Foster Care Facility Owners and Physical Therapist Plead\r\nGuilty in Medicare Home Health Fraud Scheme",
+                      "What happened on 2010-05-12T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "  Detroit-area residents Tariq Chaudhary, Lura Barrett and Stephen Cartier pleaded guilty today for their participation in a fraudulent Medicare home health scheme, the Departments of Justice and Heal..."
+                  ],
+                  "context": [
+                      "Criminal Division"
+                  ]
+              },
+              {
+                  "tag": "adventist_health_pays_united_states_and_state_of_california_$14.1_million_to_resolve_false_claims_act_allegations",
+                  "patterns": [
+                      "Adventist Health Pays United States and State of California $14.1 Million to Resolve False Claims Act Allegations",
+                      "Tell me about Adventist Health Pays United States and State of California $14.1 Million to Resolve False Claims Act Allegations",
+                      "What happened on 2013-05-03T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "  Adventist Health System/West, dba Adventist Health, and its affiliated hospital White Memorial Medical Center have agreed to pay the United States and the state of California $14.1 million to settle..."
+                  ],
+                  "context": [
+                      "Civil Division"
+                  ]
+              },
+              {
+                  "tag": "adventist_health_system_agrees_to_pay_$115_million_to_settle_false_claims_act_allegations",
+                  "patterns": [
+                      "Adventist Health System Agrees to Pay $115 Million to Settle False Claims Act Allegations",
+                      "Tell me about Adventist Health System Agrees to Pay $115 Million to Settle False Claims Act Allegations",
+                      "What happened on 2015-09-21T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "Adventist Health System\u00a0has agreed to pay the United States $115 million to settle allegations that it violated the False Claims Act by maintaining improper compensation arrangements with referring ph..."
+                  ],
+                  "context": [
+                      "Civil Division"
+                  ]
+              },
+              {
+                  "tag": "adventist_health_system_to_pay_$5.4_million_to_resolve_false_claims_act_allegations",
+                  "patterns": [
+                      "Adventist Health System to Pay $5.4 Million to Resolve False Claims Act Allegations",
+                      "Tell me about Adventist Health System to Pay $5.4 Million to Resolve False Claims Act Allegations",
+                      "What happened on 2015-03-19T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "Adventist Health System Sunbelt Healthcare Corporation (Adventist) has agreed to pay $5,412,502 to resolve claims that it violated the False Claims Act by providing radiation oncology services to Medi..."
+                  ],
+                  "context": [
+                      "Civil Division"
+                  ]
+              },
+              {
+                  "tag": "advisory_committee_on_american_indian_and_alaska_native_children_exposed_to_violence_holds_final_public_hearing",
+                  "patterns": [
+                      "Advisory Committee on American Indian and Alaska Native Children Exposed to Violence Holds Final Public Hearing",
+                      "Tell me about Advisory Committee on American Indian and Alaska Native Children Exposed to Violence Holds Final Public Hearing",
+                      "What happened on 2014-06-11T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "The Advisory Committee of the Attorney General\u2019s Task Force on American Indian and Alaska Native Children Exposed to Violence convenes its final public hearing in Anchorage, Alaska, today and tomorrow..."
+                  ],
+                  "context": [
+                      "Office of the Associate Attorney General"
+                  ]
+              },
+              {
+                  "tag": "african_trophy_hunter_indicted_for_violating_endangered_species_act_and_lacey_act",
+                  "patterns": [
+                      "African Trophy Hunter Indicted for Violating Endangered Species Act and Lacey Act",
+                      "Tell me about African Trophy Hunter Indicted for Violating Endangered Species Act and Lacey Act",
+                      "What happened on 2013-05-22T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "  Charles Kokesh was indicted by a federal grand jury in Pensacola, Florida, for violating the Endangered Species Act and the Lacey Act by selling two African elephant tusks and for making false accou..."
+                  ],
+                  "context": [
+                      "Environment and Natural Resources Division"
+                  ]
+              },
+              {
+                  "tag": "after_nearly_20_years,_international_fugitive_in_multi_million_dollar_fraud_scheme_apprehended_in_greece_and_extradited_to_united_states_to_serve_prison_sentence",
+                  "patterns": [
+                      "After Nearly 20 Years, International Fugitive in Multi-Million Dollar Fraud Scheme Apprehended in Greece and Extradited to United States to Serve Prison Sentence",
+                      "Tell me about After Nearly 20 Years, International Fugitive in Multi-Million Dollar Fraud Scheme Apprehended in Greece and Extradited to United States to Serve Prison Sentence",
+                      "What happened on 2015-07-21T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "A former New York businessman, who disappeared the same day a federal jury sitting in the U.S. District Court in Newark, New Jersey, began deliberating in his tax evasion and fraud trial, was caught w..."
+                  ],
+                  "context": [
+                      "Tax Division"
+                  ]
+              },
+              {
+                  "tag": "after_supreme_court_declines_to_hear_same_sex_marriage_cases,_attorney_general_holder_announces_federal_government_to_recognize_couples_in_seven_new_states",
+                  "patterns": [
+                      "After Supreme Court Declines to Hear Same-Sex Marriage Cases, Attorney General Holder Announces Federal Government to Recognize Couples in Seven New States",
+                      "Tell me about After Supreme Court Declines to Hear Same-Sex Marriage Cases, Attorney General Holder Announces Federal Government to Recognize Couples in Seven New States",
+                      "What happened on 2014-10-17T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "Attorney General Eric Holder announced today that the federal government will recognize same-sex marriages taking place in the states affected by the Supreme Court\u2019s recent decision to decline to revi..."
+                  ],
+                  "context": [
+                      "Office of the Attorney General"
+                  ]
+              },
+              {
+                  "tag": "after_ubs_produces_singapore_based_documents,_justice_department_dismisses_summons_case",
+                  "patterns": [
+                      "After UBS Produces Singapore-Based Documents, Justice Department Dismisses Summons Case",
+                      "Tell me about After UBS Produces Singapore-Based Documents, Justice Department Dismisses Summons Case",
+                      "What happened on 2016-06-22T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "UBS AG has complied with an Internal Revenue Service (IRS) summons for bank records held in its Singapore office, the Justice Department announced today.\u00a0 Because UBS has now produced all Singapore-ba..."
+                  ],
+                  "context": [
+                      "Tax Division"
+                  ]
+              },
+              {
+                  "tag": "agco_corp._to_pay_$1.6_million_in_connection_with_payments_to_the_former_iraqi_government_under_the_u.n._oil_for_food_program\r\n",
+                  "patterns": [
+                      "AGCO Corp. to Pay $1.6 Million in Connection with Payments to the Former Iraqi Government Under the U.N. Oil-For-Food Program\r\n",
+                      "Tell me about AGCO Corp. to Pay $1.6 Million in Connection with Payments to the Former Iraqi Government Under the U.N. Oil-For-Food Program\r\n",
+                      "What happened on 2009-09-30T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "  WASHINGTON \u2013 AGCO Corp., a U.S. corporation based in Duluth, Ga., has agreed to pay a $1.6 million penalty for illegal kickbacks paid to the former government of Iraq, Assistant Attorney General of ..."
+                  ],
+                  "context": [
+                      "Criminal Division"
+                  ]
+              },
+              {
+                  "tag": "agency_chief_foia_officers_respond_to_the_president\u2019s_and_attorney_general\u2019s_call_for_transparency",
+                  "patterns": [
+                      "Agency Chief FOIA Officers Respond to the President\u2019s and Attorney General\u2019s Call for Transparency",
+                      "Tell me about Agency Chief FOIA Officers Respond to the President\u2019s and Attorney General\u2019s Call for Transparency",
+                      "What happened on 2010-07-29T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "      WASHINGTON \u2013 Responding to the President\u2019s and Attorney General\u2019s call for increased transparency, federal agencies across the government have released more documents, made more information avai..."
+                  ],
+                  "context": [
+                      "Office of the Attorney General"
+                  ]
+              },
+              {
+                  "tag": "agreement_furthers_cleanup_of_the_quanta_resources_superfund_site_in_edgewater,_new_jersey",
+                  "patterns": [
+                      "Agreement Furthers Cleanup of the Quanta Resources Superfund Site in Edgewater, New Jersey",
+                      "Tell me about Agreement Furthers Cleanup of the Quanta Resources Superfund Site in Edgewater, New Jersey",
+                      "What happened on 2012-11-19T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      "      Another important step toward cleaning up the Quanta Resources Superfund site in Edgewater, N.J., was announced today by the Department of Justice and the U.S. Environmental Protection Agency (E..."
+                  ],
+                  "context": [
+                      "Environment and Natural Resources Division"
+                  ]
+              },
+              {
+                  "tag": "agreement_reached_with_the_unified_government_of_wyandotte_county_and_kansas_city,_kansas,_to_improve_sewer_and_stormwater_systems",
+                  "patterns": [
+                      "Agreement Reached with the Unified Government of Wyandotte County and Kansas City, Kansas, to Improve Sewer and Stormwater Systems",
+                      "Tell me about Agreement Reached with the Unified Government of Wyandotte County and Kansas City, Kansas, to Improve Sewer and Stormwater Systems",
+                      "What happened on 2013-03-21T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "  The Unified Government of Wyandotte Co. and Kansas City, Kan., has agreed to a settlement to address unauthorized overflows of untreated raw sewage and to reduce pollution levels in urban stormwater..."
+                  ],
+                  "context": [
+                      "Environment and Natural Resources Division"
+                  ]
+              },
+              {
+                  "tag": "agreement_secures_$25_million_cleanup_for_the_rio_tinto_mine_in_nevada",
+                  "patterns": [
+                      "Agreement Secures $25 Million Cleanup for the Rio Tinto Mine in Nevada",
+                      "Tell me about Agreement Secures $25 Million Cleanup for the Rio Tinto Mine in Nevada",
+                      "What happened on 2012-09-27T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "       The Department of Justice, the U.S. Environmental Protection Agency (EPA) and the Nevada Division of Environmental Protection announced a $25 million agreement for the cleanup of the Rio Tinto ..."
+                  ],
+                  "context": [
+                      "Environment and Natural Resources Division"
+                  ]
+              },
+              {
+                  "tag": "agreement_will_ensure_the_start_of_cleanup_of_former_landfill_near_south_lake_tahoe,_california",
+                  "patterns": [
+                      "Agreement Will Ensure the Start of Cleanup of Former Landfill Near South Lake Tahoe, California",
+                      "Tell me about Agreement Will Ensure the Start of Cleanup of Former Landfill Near South Lake Tahoe, California",
+                      "What happened on 2010-06-29T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "  WASHINGTON\u2014A settlement with El Dorado County, Calif., will ensure the beginning of the cleanup, at an estimated cost of approximately $7 million, of the Meyers Landfill Site, located outside of the..."
+                  ],
+                  "context": [
+                      "Environment and Natural Resources Division"
+                  ]
+              },
+              {
+                  "tag": "ahead_of_election_day,_attorney_general_holder_dispatches_federal_poll_monitors_to_aid_in_efforts_to_prevent_voter_discrimination",
+                  "patterns": [
+                      "Ahead of Election Day, Attorney General Holder Dispatches Federal Poll Monitors to Aid in Efforts to Prevent Voter Discrimination",
+                      "Tell me about Ahead of Election Day, Attorney General Holder Dispatches Federal Poll Monitors to Aid in Efforts to Prevent Voter Discrimination",
+                      "What happened on 2014-11-03T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      "In an effort to reaffirm the Justice Department\u2019s commitment and responsibility to protect eligible Americans from discrimination at the ballot box, Attorney General Eric Holder released a video today..."
+                  ],
+                  "context": [
+                      "Civil Rights - Criminal Section",
+                      "Office of the Attorney General"
+                  ]
+              },
+              {
+                  "tag": "ahmad_khan_rahami_charged_in_manhattan_and_new_jersey_federal_courts_with_executing_bombings_in_new_york_city_and_new_jersey",
+                  "patterns": [
+                      "Ahmad Khan Rahami Charged in Manhattan and New Jersey Federal Courts with Executing Bombings in New York City and New Jersey",
+                      "Tell me about Ahmad Khan Rahami Charged in Manhattan and New Jersey Federal Courts with Executing Bombings in New York City and New Jersey",
+                      "What happened on 2016-09-20T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "Attorney General Loretta E. Lynch, Assistant Attorney General for National Security John P. Carlin, FBI Director James B. Comey,\u00a0U.S. Attorney Preet Bharara of the Southern District of New York, U.S. ..."
+                  ],
+                  "context": [
+                      "National Security Division (NSD)",
+                      "USAO - New Jersey",
+                      "USAO - New York, Southern"
+                  ]
+              },
+              {
+                  "tag": "ahmad_khan_rahimi_indicted_in_manhattan_federal_court_for_executing_bombing_and_attempted_bombing_in_new_york_city_",
+                  "patterns": [
+                      "Ahmad Khan Rahimi Indicted in Manhattan Federal Court for Executing Bombing and Attempted Bombing in New York City ",
+                      "Tell me about Ahmad Khan Rahimi Indicted in Manhattan Federal Court for Executing Bombing and Attempted Bombing in New York City ",
+                      "What happened on 2016-11-16T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      "Rahimi Allegedly Detonated and Attempted to Detonate Bombs on Public Streets in the Chelsea Neighborhood of Manhattan Ahmad Khan Rahimi aka Ahmad Rahami, 28, of Elizabeth, New Jersey, was charged toda..."
+                  ],
+                  "context": [
+                      "National Security Division (NSD)"
+                  ]
+              },
+              {
+                  "tag": "ahmed_abu_khatallah_found_guilty_of_terrorism_charges__in_september_2012_attack_in_benghazi,_libya",
+                  "patterns": [
+                      "Ahmed Abu Khatallah Found Guilty of Terrorism Charges  in September 2012 Attack in Benghazi, Libya",
+                      "Tell me about Ahmed Abu Khatallah Found Guilty of Terrorism Charges  in September 2012 Attack in Benghazi, Libya",
+                      "What happened on 2017-11-28T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      "Ahmed Abu Khatallah, aka Ahmed Mukatallah, 46, a Libyan national, was found guilty by a jury today of federal terrorism charges and other offenses stemming from the Sept. 11, 2012 terrorist attack on ..."
+                  ],
+                  "context": [
+                      "National Security Division (NSD)",
+                      "USAO - District of Columbia"
+                  ]
+              },
+              {
+                  "tag": "ahmed_abu_khatallah_indicted_on_additional_charges_for_september_2012_attack_in_benghazi,_libya",
+                  "patterns": [
+                      "Ahmed Abu Khatallah Indicted on Additional Charges for September 2012 Attack in Benghazi, Libya",
+                      "Tell me about Ahmed Abu Khatallah Indicted on Additional Charges for September 2012 Attack in Benghazi, Libya",
+                      "What happened on 2014-10-14T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "A federal grand jury in the District of Columbia returned a superseding indictment today charging Ahmed Abu Khatallah, aka Ahmed Mukatallah, with numerous additional offenses arising from his alleged ..."
+                  ],
+                  "context": [
+                      "National Security Division (NSD)"
+                  ]
+              },
+              {
+                  "tag": "ahmed_abu_khatallah_indicted_for_terrorist_conspiracy_stemming_from_september_2012_attack_in_benghazi,_libya",
+                  "patterns": [
+                      "Ahmed Abu Khatallah Indicted for Terrorist Conspiracy Stemming from September 2012 Attack in Benghazi, Libya",
+                      "Tell me about Ahmed Abu Khatallah Indicted for Terrorist Conspiracy Stemming from September 2012 Attack in Benghazi, Libya",
+                      "What happened on 2014-06-28T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "Ahmed Abu Khatallah, aka Ahmed Mukatallah, made his first appearance today in the U.S. District Court for the District of Columbia on a federal terrorism offense arising from his alleged participation..."
+                  ],
+                  "context": [
+                      "National Security Division (NSD)",
+                      "Office of the Attorney General"
+                  ]
+              },
+              {
+                  "tag": "ahmed_abu_khatallah_sentenced_to_22_years_in_prison_for_september_2012_attack_in_benghazi,_libya",
+                  "patterns": [
+                      "Ahmed Abu Khatallah Sentenced to 22 Years in Prison for September 2012 Attack in Benghazi, Libya",
+                      "Tell me about Ahmed Abu Khatallah Sentenced to 22 Years in Prison for September 2012 Attack in Benghazi, Libya",
+                      "What happened on 2018-06-27T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "Ahmed Abu Khatallah, aka Ahmed Mukatallah, 47, a Libyan national, was sentenced today to 22 years in prison on federal terrorism charges and other offenses stemming from the Sept. 11, 2012 terrorist a..."
+                  ],
+                  "context": [
+                      "National Security Division (NSD)",
+                      "USAO - District of Columbia"
+                  ]
+              },
+              {
+                  "tag": "ahmed_ghailani_transferred_from_guantanamo_bay_to_\r\nnew_york_for_prosecution_on_terror_charges",
+                  "patterns": [
+                      "Ahmed Ghailani Transferred from Guantanamo Bay to \r\nNew York for Prosecution on Terror Charges",
+                      "Tell me about Ahmed Ghailani Transferred from Guantanamo Bay to \r\nNew York for Prosecution on Terror Charges",
+                      "What happened on 2009-06-09T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "  Ahmed Khalfan Ghailani, a Tanzanian national who had been held at the Guantanamo Bay detention facility since September 2006, arrived early this morning in the Southern District of New York to face ..."
+                  ],
+                  "context": [
+                      "Office of the Attorney General"
+                  ]
+              },
+              {
+                  "tag": "ahmet_okumus_to_pay_$180,000_civil_penalty_for_violating_antitrust_premerger_notification_requirements",
+                  "patterns": [
+                      "Ahmet Okumus to Pay $180,000 Civil Penalty for Violating Antitrust Premerger Notification Requirements",
+                      "Tell me about Ahmet Okumus to Pay $180,000 Civil Penalty for Violating Antitrust Premerger Notification Requirements",
+                      "What happened on 2017-01-17T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      "The Justice Department\u2019s Antitrust Division, at the request of the Federal Trade Commission (FTC), filed a civil antitrust lawsuit today in U.S. District Court in Washington, D.C., against Ahmet Okumu..."
+                  ],
+                  "context": [
+                      "Antitrust Division"
+                  ]
+              },
+              {
+                  "tag": "air_duct_company,_president_and_manager_\r\nplead_guilty_in_las_vegas_to_environmental_crimes",
+                  "patterns": [
+                      "Air Duct Company, President and Manager \r\nPlead Guilty in Las Vegas to Environmental Crimes",
+                      "Tell me about Air Duct Company, President and Manager \r\nPlead Guilty in Las Vegas to Environmental Crimes",
+                      "What happened on 2012-12-03T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      "   \u00a0\u00a0\u00a0\u00a0 WASHINGTON \u2013 DPL Enterprises Inc. (dba Air Care Indoor Quality Specialists), Richard Papaleo, the company\u2019s president and owner, and Michael Stanovich, a company manager pleaded guilty today i..."
+                  ],
+                  "context": [
+                      "Environment and Natural Resources Division"
+                  ]
+              },
+              {
+                  "tag": "air_force_nco_sentenced_to_120_years_in_prison_for_sexually_exploiting_toddlers_and_children_to_produce_child_pornography",
+                  "patterns": [
+                      "Air Force NCO Sentenced to 120 years in Prison for Sexually Exploiting Toddlers and Children to Produce Child Pornography",
+                      "Tell me about Air Force NCO Sentenced to 120 years in Prison for Sexually Exploiting Toddlers and Children to Produce Child Pornography",
+                      "What happened on 2014-06-23T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "  Earlier today, William S. Gazafi, age 44, of Lusby, Maryland, was sentenced to  120 years in prison, for six counts of sexually exploiting a minor to produce  child pornography.Assistant Attorney Ge..."
+                  ],
+                  "context": [
+                      "Criminal Division"
+                  ]
+              },
+              {
+                  "tag": "air_force_veteran_sentenced_to_35_years_in_prison_for_attempting_to_join_isis_and_obstruction_of_justice_",
+                  "patterns": [
+                      "Air Force Veteran Sentenced to 35 Years in Prison for Attempting to Join ISIS and Obstruction of Justice ",
+                      "Tell me about Air Force Veteran Sentenced to 35 Years in Prison for Attempting to Join ISIS and Obstruction of Justice ",
+                      "What happened on 2017-05-31T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "Today, Tairod Nathan Webster Pugh, a U.S. citizen and former member of the U.S. Air Force, was sentenced to 35\u00a0years in prison for attempting to provide material support to the Islamic State of Iraq a..."
+                  ],
+                  "context": [
+                      "National Security Division (NSD)",
+                      "USAO - New York, Eastern"
+                  ]
+              },
+              {
+                  "tag": "airport_baggage_handlers_charged_in_wide_ranging_conspiracy_to_transport_drugs_across_the_country_",
+                  "patterns": [
+                      "Airport Baggage Handlers Charged in Wide-Ranging Conspiracy to Transport Drugs Across the Country ",
+                      "Tell me about Airport Baggage Handlers Charged in Wide-Ranging Conspiracy to Transport Drugs Across the Country ",
+                      "What happened on 2015-05-18T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "Fourteen persons have been charged in connection with an alleged wide-ranging criminal conspiracy to violate airport security requirements and transport drugs throughout the country announced U.S. Att..."
+                  ],
+                  "context": [
+                      "USAO - California, Northern"
+                  ]
+              },
+              {
+                  "tag": "aisin_seiki_co._ltd._agrees_to_plead_guilty_to_customer_allocation_on_automobile_parts_installed_in_u.s._cars",
+                  "patterns": [
+                      "Aisin Seiki Co. Ltd. Agrees to Plead Guilty to Customer Allocation on Automobile Parts Installed in U.S. Cars",
+                      "Tell me about Aisin Seiki Co. Ltd. Agrees to Plead Guilty to Customer Allocation on Automobile Parts Installed in U.S. Cars",
+                      "What happened on 2014-11-13T00:00:00-05:00"
+                  ],
+                  "responses": [
+                      "Aisin Seiki Co. Ltd., an automotive parts manufacturer based in Kariya, Japan, has agreed to plead guilty and to pay a $35.8 million criminal fine for its role in a conspiracy to allocate customers of..."
+                  ],
+                  "context": [
+                      "Antitrust Division"
+                  ]
+              },
+              {
+                  "tag": "ak_steel_to_pay_$1.3_million_civil_penalty_as_part_of_settlement_with_united_states_and_michigan_for_air_violations_at_dearborn_steel_plant",
+                  "patterns": [
+                      "AK Steel to Pay $1.3 Million Civil Penalty as Part of Settlement with United States and Michigan for Air Violations at Dearborn Steel Plant",
+                      "Tell me about AK Steel to Pay $1.3 Million Civil Penalty as Part of Settlement with United States and Michigan for Air Violations at Dearborn Steel Plant",
+                      "What happened on 2015-05-20T00:00:00-04:00"
+                  ],
+                  "responses": [
+                      "Under a settlement agreement with the United States and the state of Michigan, AK Steel Corporation will pay a civil penalty of $1.35 million for past violations of the Clean Air Act at its Dearborn, ..."
+                  ],
+                  "context": [
+                      "Environment and Natural Resources Division"
+                  ]
+              },{
+                "tag": "department_functions",
+                "patterns": [
+                    "What are the main functions of the DoJ?",
+                    "Can you explain the responsibilities of the Department of Justice?",
+                    "What does the Department of Justice do?"
+                ],
+                "responses": [
+                    "The Department of Justice is responsible for enforcing the law, ensuring fair and impartial administration of justice, providing legal advice to the government, and protecting the rights of citizens."
+                ],
+                "context": []
+            },
+            {
+                "tag": "filing_family_court_case",
+                "patterns": [
+                    "How do I file a case in family court?",
+                    "What is the process for filing a family court case?",
+                    "Can you guide me on how to file for divorce?"
+                ],
+                "responses": [
+                    "To file a case in family court, you need to submit a petition along with the required documents to the family court in your jurisdiction. It is advisable to seek legal assistance for this process."
+                ],
+                "context": []
+            },
+            {
+                "tag": "appeal_process",
+                "patterns": [
+                    "What is the appeal process in courts?",
+                    "How can I appeal a court decision?",
+                    "Can you explain how appeals work?"
+                ],
+                "responses": [
+                    "The appeal process involves filing a notice of appeal with the appropriate court, followed by submitting the required documentation and legal arguments for why the decision should be reconsidered."
+                ],
+                "context": []
+            },
+            {
+                "tag": "report_cyber_crime",
+                "patterns": [
+                    "How can I report a cyber crime?",
+                    "What steps should I take to report online fraud?",
+                    "Can you tell me about the procedure to report cyber crime?"
+                ],
+                "responses": [
+                    "You can report a cyber crime by filing a complaint with your local police department or through the Cyber Crime Reporting Portal of the Ministry of Home Affairs, Government of India."
+                ],
+                "context": []
+            },
+            {
+                "tag": "consumer_rights",
+                "patterns": [
+                    "What are my rights as a consumer?",
+                    "Can you explain consumer protection laws?",
+                    "How can I exercise my consumer rights?"
+                ],
+                "responses": [
+                    "As a consumer, you have rights to safety, information, choice, and redress. You can file complaints with the Consumer Protection Forum for grievances regarding goods and services."
+                ],
+                "context": []
+            },
+            {
+                "tag": "ip_theft_complaint",
+                "patterns": [
+                    "What should I do if I want to file a complaint for IP theft?",
+                    "How can I report intellectual property theft?",
+                    "Can you guide me on IP theft procedures?"
+                ],
+                "responses": [
+                    "To file a complaint for IP theft, you can contact the Intellectual Property Appellate Board or file a complaint with the police. Providing evidence of the infringement will support your case."
+                ],
+                "context": []
+            },
+            {
+                "tag": "women_protection_laws",
+                "patterns": [
+                    "What laws protect women from domestic violence?",
+                    "Can you explain the Protection of Women from Domestic Violence Act?",
+                    "What are the legal provisions for women's safety?"
+                ],
+                "responses": [
+                    "The Protection of Women from Domestic Violence Act provides legal protection to women against domestic violence, ensuring their right to reside in a shared household and seek protection orders."
+                ],
+                "context": []
+            },
+            {
+                "tag": "finding_immigration_attorney",
+                "patterns": [
+                    "How do I find an immigration attorney?",
+                    "What should I look for in an immigration lawyer?",
+                    "Can you recommend a good immigration attorney?"
+                ],
+                "responses": [
+                    "To find an immigration attorney, you can search through the Bar Association's directory, legal aid organizations, or seek referrals from friends or family who have used immigration services."
+                ],
+                "context": []
+            },
+            {
+                "tag": "environmental_laws",
+                "patterns": [
+                    "What are the environmental laws in India?",
+                    "Can you explain the Environmental Protection Act?",
+                    "What regulations govern environmental protection?"
+                ],
+                "responses": [
+                    "Environmental laws in India include the Environmental Protection Act, Water Act, and Air Act, which regulate pollution and protect the environment and public health."
+                ],
+                "context": []
+            },
+            {
+                "tag": "cyber_security_best_practices",
+                "patterns": [
+                    "What are the best practices for cyber security?",
+                    "How can I protect my data online?",
+                    "Can you give tips for ensuring cyber security?"
+                ],
+                "responses": [
+                    "Best practices for cyber security include using strong passwords, enabling two-factor authentication, regularly updating software, and being cautious of phishing scams."
+                ],
+                "context": []
+            },
+            {
+                "tag": "legal_aid_services",
+                "patterns": [
+                    "How do I apply for legal aid services?",
+                    "What are the eligibility criteria for legal aid?",
+                    "Can you explain the legal aid application process?"
+                ],
+                "responses": [
+                    "To apply for legal aid services, you can visit your local legal aid office or their official website. Eligibility is typically based on income and the nature of the legal issue."
+                ],
+                "context": []
+            },
+            {
+                "tag": "case_statistics",
+                "patterns": [
+                    "Can you provide statistics on the number of cases pending in the courts?",
+                    "What are the latest updates on legal aid programs?",
+                    "How many judges are currently appointed at the District and Subordinate Courts?"
+                ],
+                "responses": [
+                    "Current statistics on pending cases, legal aid programs, and the number of judges can be accessed through the National Judicial Data Grid (NJDG) or the official judiciary website."
+                ],
+                "context": []
+            },
+            {
+                "tag": "legal_resources_small_businesses",
+                "patterns": [
+                    "What legal resources are available for small businesses?",
+                    "How can small businesses get legal assistance?",
+                    "Can you recommend resources for entrepreneurs?"
+                ],
+                "responses": [
+                    "Small businesses can access legal resources through local chambers of commerce, small business administration offices, and legal aid organizations that offer specialized services."
+                ],
+                "context": []
+            },
+            {
+                "tag": "check_case_status",
+                "patterns": [
+                    "How can I check the status of my case in court?",
+                    "What is the procedure to track my case?",
+                    "Can you tell me how to monitor my case status?"
+                ],
+                "responses": [
+                    "You can check the status of your case through the National Judicial Data Grid (NJDG) or by contacting the court where your case is filed."
+                ],
+                "context": []
+            },
+            {
+                "tag": "judicial_training_support",
+                "patterns": [
+                    "What support does the DoJ provide for judicial training?",
+                    "How can I find information on judicial training programs?",
+                    "Are there resources available for judicial officers?"
+                ],
+                "responses": [
+                    "The DoJ provides support for judicial training through financial assistance to the National Judicial Academy and organizes various training programs for judicial officers."
+                ],
+                "context": []
+            },
+            {
+                "tag": "land_acquisition_laws",
+                "patterns": [
+                    "Are there any resources for understanding land acquisition laws?",
+                    "Can you explain the land acquisition process?",
+                    "What legal frameworks govern land acquisition in India?"
+                ],
+                "responses": [
+                    "Resources for understanding land acquisition laws can be found in the Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013, and various government publications."
+                ],
+                "context": []
+            }
+            
+            ]
+        }
