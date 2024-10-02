@@ -7,6 +7,10 @@ from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 from PIL import Image
 import numpy as np
+import nltk  # Import NLTK
+
+# Download the punkt tokenizer if it's not already downloaded
+nltk.download('punkt')
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
