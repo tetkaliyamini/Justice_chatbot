@@ -1,5 +1,5 @@
 streamlit==1.23.1
-torch==2.0.0
+torch==2.4.1
 easyocr==1.4
 numpy==1.21.0
 Pillow==9.0.1
